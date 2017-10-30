@@ -8,7 +8,6 @@
 !/.gitignore
 *~
 .DS_Store
-.idea
 # BlueJ files
 *.ctxt
 # Mobile Tools for Java (J2ME)
