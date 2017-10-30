@@ -6,6 +6,7 @@
 # ignore hidden file
 .*
 !/.gitignore
+.idea/
 
 # BlueJ files
 *.ctxt
