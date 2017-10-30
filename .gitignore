@@ -6,8 +6,9 @@
 # ignore hidden file
 .*
 !/.gitignore
-.idea/
-
+*~
+.DS_Store
+.idea
 # BlueJ files
 *.ctxt
 out/
