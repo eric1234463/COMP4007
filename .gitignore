@@ -4,12 +4,15 @@
 # Log file
 *.log
 # ignore hidden file
-
+.*
 !/.gitignore
 *~
 .DS_Store
+.idea
 # BlueJ files
 *.ctxt
+out/
+.idea/
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
