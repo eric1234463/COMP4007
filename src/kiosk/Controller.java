@@ -10,7 +10,7 @@ import java.net.*;
 import java.io.*;
 
 
-public class Contoller {
+public class Controller {
     @FXML private GridPane gridPane;
 
     public void setSeat(Table table){

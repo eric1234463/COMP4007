@@ -7,10 +7,10 @@ import java.net.Socket;
 
 public class Listener implements Runnable{
     private static final int LISTEN_PORT = 54321;
-    private Contoller contoller;
+    private Controller controller;
 
-    public Listener(Contoller contoller){
-        this.contoller = contoller;
+    public Listener(Controller controller){
+        this.controller = controller;
     }
 
     @Override
@@ -20,7 +20,7 @@ public class Listener implements Runnable{
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(LISTEN_PORT);
-            System.out.println("Contoller listening requests...");
+            System.out.println("Controller listening requests...");
             while (true) {
                 Socket socket = serverSocket.accept();
                 try {
