@@ -7,7 +7,6 @@ import java.net.Socket;
 public class Listener implements Runnable{
     private static final int LISTEN_PORT = 54321;
     private Controller controller;
-
     private BufferedReader bufferedReader;
     private PrintWriter printWriter;
     private ServerSocket serverSocket = null;
@@ -33,7 +32,7 @@ public class Listener implements Runnable{
         while(true) {
             try {
                 String Msg = bufferedReader.readLine();
-                //System.out.println(Msg);
+                System.out.println(Msg);
                 mapMsg(Msg, countTicketReq);
                 countTicketReq++;
             }catch (IOException e) {
@@ -70,7 +69,7 @@ public class Listener implements Runnable{
         String clientId = ticket.getClientId();
         int nPersons = ticket.getnPersons();
         int ticketNo = ticket.getTicketNo();
-        //System.out.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
+        System.out.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
         printWriter.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
         printWriter.flush();
     }
