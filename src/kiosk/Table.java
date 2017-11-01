@@ -2,23 +2,23 @@ package kiosk;
 
 public class Table {
     private Integer ticketNo;
-    private Integer tableNo;
+    private String tableNo;
     private Integer nPersons;
     private Boolean isEmpty;
 
 
-    public Table (Integer ticketNo, Integer nPersons, Integer tableNo) {
+    public Table (Integer ticketNo, Integer nPersons, String tableNo) {
         this.ticketNo = ticketNo;
         this.nPersons = nPersons;
         this.tableNo = tableNo;
-
+        this.isEmpty = true;
     }
 
     public Integer getTicketNo() {
         return ticketNo;
     }
 
-    public Integer getTableNo() {
+    public String getTableNo() {
         return tableNo;
     }
 
@@ -33,4 +33,5 @@ public class Table {
     public void setEmpty(Boolean empty) {
         isEmpty = empty;
     }
+
 }
