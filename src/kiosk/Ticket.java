@@ -1,17 +1,17 @@
 package kiosk;
 
 public class Ticket {
-    private Integer clientId;
+    private String clientId;
     private Integer nPersons;
     private Integer ticketNo;
     private Integer tableNo;
     public Ticket(String message) {
         String[] ObjectMapper = message.split(" ");
-        this.clientId = Integer.parseInt(ObjectMapper[1]);
+        this.clientId = ObjectMapper[1];
         this.nPersons = Integer.parseInt(ObjectMapper[2]);
     }
 
-    public Integer getClientId() {
+    public String getClientId() {
         return clientId;
     }
 
@@ -29,6 +29,7 @@ public class Ticket {
 
     public void setTicketNo(Integer ticketNo) {
         this.ticketNo = ticketNo;
+        //System.out.println("\t " + ticketNo + "");
     }
 
     public void setTableNo(Integer tableNo) {
