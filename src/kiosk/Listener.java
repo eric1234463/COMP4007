@@ -6,13 +6,13 @@ import java.net.Socket;
 
 public class Listener implements Runnable{
     private static final int LISTEN_PORT = 54321;
-    private Contoller contoller;
+    private Controller controller;
     private BufferedReader bufferedReader;
     private PrintWriter printWriter;
     private ServerSocket serverSocket = null;
 
-    public Listener(Contoller contoller){
-        this.contoller = contoller;
+    public Listener(Controller controller){
+        this.controller = controller;
         try {
             serverSocket = new ServerSocket(LISTEN_PORT);
             System.out.println("Server start...");

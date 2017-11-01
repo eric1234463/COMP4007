@@ -17,9 +17,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         this.parentStage = primaryStage;
         this.parentStage.setTitle("Kiosk");
-        Contoller contoller = (Contoller) replaceSceneContent("table.fxml");
+        Controller controller = (Controller) replaceSceneContent("table.fxml");
 
-        Listener listener = new Listener(contoller);
+        Listener listener = new Listener(controller);
         Thread x = new Thread(listener);
         x.start();
         this.parentStage.show();
