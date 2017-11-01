@@ -4,9 +4,10 @@ public class Table {
     private Integer ticketNo;
     private Integer tableNo;
     private Integer nPersons;
-    private Integer row;
-    private Integer col;
-    public Table (Integer ticketNo,Integer nPersons,Integer tableNo) {
+    private Boolean isEmpty;
+
+
+    public Table (Integer ticketNo, Integer nPersons, Integer tableNo) {
         this.ticketNo = ticketNo;
         this.nPersons = nPersons;
         this.tableNo = tableNo;
@@ -25,7 +26,11 @@ public class Table {
         return nPersons;
     }
 
-    public void assignTable(){
+    public Boolean getEmpty() {
+        return isEmpty;
+    }
 
+    public void setEmpty(Boolean empty) {
+        isEmpty = empty;
     }
 }

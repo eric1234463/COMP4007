@@ -33,7 +33,7 @@ public class Listener implements Runnable{
         while(true) {
             try {
                 String Msg = bufferedReader.readLine();
-                System.out.println(Msg);
+                //System.out.println(Msg);
                 mapMsg(Msg, countTicketReq);
                 countTicketReq++;
             }catch (IOException e) {
@@ -70,7 +70,7 @@ public class Listener implements Runnable{
         String clientId = ticket.getClientId();
         int nPersons = ticket.getnPersons();
         int ticketNo = ticket.getTicketNo();
-        System.out.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
+        //System.out.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
         printWriter.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
         printWriter.flush();
     }
