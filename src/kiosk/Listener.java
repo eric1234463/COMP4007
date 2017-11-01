@@ -7,6 +7,7 @@ import java.net.Socket;
 public class Listener implements Runnable{
     private static final int LISTEN_PORT = 54321;
     private Controller controller;
+
     private BufferedReader bufferedReader;
     private PrintWriter printWriter;
     private ServerSocket serverSocket = null;
@@ -27,6 +28,7 @@ public class Listener implements Runnable{
 
     @Override
     public void run() {
+
         int countTicketReq = 0;
         while(true) {
             try {

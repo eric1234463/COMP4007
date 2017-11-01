@@ -1,24 +1,16 @@
 package kiosk;
 
 public class Table {
-    private String action;
     private Integer ticketNo;
     private Integer tableNo;
     private Integer nPersons;
-    public Table (String message) {
-        String[] ObjectMapper = message.split(" ");
-        this.action = ObjectMapper[0];
-        switch (this.action) {
-            case "TicketAck:":
-                this.ticketNo = Integer.parseInt(ObjectMapper[1]);
-                this.tableNo = Integer.parseInt(ObjectMapper[2]);
-                this.nPersons = Integer.parseInt(ObjectMapper[3]);
-                break;
-        }
-    }
+    private Integer row;
+    private Integer col;
+    public Table (Integer ticketNo,Integer nPersons,Integer tableNo) {
+        this.ticketNo = ticketNo;
+        this.nPersons = nPersons;
+        this.tableNo = tableNo;
 
-    public String getAction() {
-        return action;
     }
 
     public Integer getTicketNo() {
@@ -31,5 +23,9 @@ public class Table {
 
     public Integer getnPersons() {
         return nPersons;
+    }
+
+    public void assignTable(){
+
     }
 }
