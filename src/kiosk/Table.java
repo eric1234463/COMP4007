@@ -6,8 +6,9 @@ public class Table {
     private Integer nPersons;
     private Boolean isEmpty;
 
-    public Table (String tableNo) {
+    public Table (String tableNo, Boolean isEmpty) {
         this.tableNo = tableNo;
+        this.isEmpty = true;
     }
 
     public Integer getTicketNo() {
@@ -22,15 +23,20 @@ public class Table {
         return nPersons;
     }
 
-    public void assignTable() { }
+    public void assignTable(int ticketNo) {
+        this.ticketNo = ticketNo;
+        isEmpty = false;
+    }
 
     public Boolean getEmpty() {
         return isEmpty;
     }
 
-    public void setEmpty(Boolean empty) {
-        isEmpty = empty;
+    public void setEmpty(Boolean empty) { isEmpty = true; }
+
+    //for debug
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "[tableNo= " + tableNo + ", isEmpty= "+ isEmpty + "]";
     }
-
-
 }

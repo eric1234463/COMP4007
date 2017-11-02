@@ -4,11 +4,12 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 
 public class Listener implements Runnable{
     private static final int LISTEN_PORT = 54321;
-    private static final int[] TABLE_TYPE_NUM = {10,10,8,2,2};
+    private static final int[] TABLE_TYPE_COL = {10,10,8,2,2};
 
     private Controller controller;
 
@@ -22,23 +23,19 @@ public class Listener implements Runnable{
 
     public Listener(Controller controller){
         this.controller = controller;
-        int current_tableRow = 0;
+        int tableRow = 0;
 
         for(int i = 0; i < 5; i++) {
             tables.add(new ArrayList<Table>());
         }
 
         for(int i = 0; i < 5; i++) {
-            //for(int tableRow = 0; tableRow < 2 || current_tableRow < 9; tableRow++) {
-                for(int tableCol = 0; tableCol < TABLE_TYPE_NUM[i] ; tableCol++) {
-                    tables.get(i).add(table = new Table(String.valueOf(current_tableRow)+"_"+String.valueOf(tableCol)));
-                    System.out.print(String.valueOf(current_tableRow)+"_"+String.valueOf(tableCol)+" ");
-                }
-                current_tableRow++;
-            //}
+            for(int tableCol = 0; tableCol < TABLE_TYPE_COL[i] ; tableCol++) {
+                tables.get(i).add(table = new Table(String.valueOf(tableRow)+"_"+String.valueOf(tableCol),true));
+                //System.out.print(String.valueOf(current_tableRow)+"_"+String.valueOf(tableCol)+" ");
+            }
+            tableRow++;
         }
-
-        System.out.println(tables.get(0));
 
         try {
             ServerSocket serverSocket = new ServerSocket(LISTEN_PORT);
@@ -54,14 +51,14 @@ public class Listener implements Runnable{
 
     @Override
     public void run() {
-        int countTicketReq = 0;
+        int countTicketReq = 1;
         queue = new Queue();
         while(true) {
             try {
                 String Msg = bufferedReader.readLine();
                 System.out.println(Msg);
                 mapMsg(Msg, countTicketReq);
-                countTicketReq++;
+                countTicketReq+=1;
             }catch (IOException e) {
                 e.printStackTrace();
             }
@@ -77,7 +74,16 @@ public class Listener implements Runnable{
                 ticket.setTicketNo(countTicketReq);
                 ticketRep(ticket);
 
-                queue.addTicket(ticket);
+                if (tryAssignTable(ticket)){
+                    try {
+                        Thread.sleep(1000);
+                        ticketCall(ticket);
+                    } catch(InterruptedException ex) {
+                        Thread.currentThread().interrupt();
+                    }
+                } else {
+                    queue.addTicket(ticket);
+                }
 
                 break;
             case "TicketAck:":
@@ -96,10 +102,75 @@ public class Listener implements Runnable{
         String clientId = ticket.getClientId();
         int nPersons = ticket.getnPersons();
         int ticketNo = ticket.getTicketNo();
-        System.out.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
+        //System.out.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
         printWriter.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
         printWriter.flush();
     }
 
+    public boolean tryAssignTable(Ticket ticket) {
+        switch (ticket.getnPersons()) {
+            case 1:
+            case 2:
+                for (Table table: tables.get(0)) {
+                    if(table.getEmpty()) {
+                        table.assignTable(ticket.getTicketNo());
+                        ticket.setTableNo(table.getTableNo());
+                        return true;
+                    }
+                }
+                break;
+            case 3:
+            case 4:
+                for (Table table: tables.get(1)) {
+                    if(table.getEmpty()) {
+                        table.assignTable(ticket.getTicketNo());
+                        ticket.setTableNo(table.getTableNo());
+                        return true;
+                    }
+                }
+                break;
+            case 5:
+            case 6:
+                for (Table table: tables.get(2)) {
+                    if(table.getEmpty()) {
+                        table.assignTable(ticket.getTicketNo());
+                        ticket.setTableNo(table.getTableNo());
+                        return true;
+                    }
+                }
+                break;
+            case 7:
+            case 8:
+                for (Table table: tables.get(3)) {
+                    if(table.getEmpty()) {
+                        table.assignTable(ticket.getTicketNo());
+                        ticket.setTableNo(table.getTableNo());
+                        return true;
+                    }
+                }
+                break;
+            case 9:
+            case 10:
+                for (Table table: tables.get(4)) {
+                    if(table.getEmpty()) {
+                        table.assignTable(ticket.getTicketNo());
+                        ticket.setTableNo(table.getTableNo());
+                        return true;
+                    }
+                }
+                break;
+        }
+        return false;
+    }
+
+
+
+    public void ticketCall(Ticket ticket) {
+        int ticketNo = ticket.getTicketNo();
+        String tableNo = ticket.getTableNo();
+
+        printWriter.println("TicketCall: "+ticketNo+" "+tableNo+"");
+        printWriter.flush();
+    }
 
 }
