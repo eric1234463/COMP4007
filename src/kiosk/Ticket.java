@@ -1,10 +1,11 @@
 package kiosk;
 
 public class Ticket {
-    private String clientId;
-    private Integer nPersons;
-    private Integer ticketNo;
-    private Integer tableNo;
+    public String clientId;
+    public Integer nPersons;
+    public Integer ticketNo;
+    public Integer tableNo;
+
     public Ticket(String message) {
         String[] ObjectMapper = message.split(" ");
         this.clientId = ObjectMapper[1];
@@ -27,10 +28,7 @@ public class Ticket {
         return tableNo;
     }
 
-    public void setTicketNo(Integer ticketNo) {
-        this.ticketNo = ticketNo;
-        //System.out.println("\t " + ticketNo + "");
-    }
+    public void setTicketNo(Integer ticketNo) { this.ticketNo = ticketNo; }
 
     public void setTableNo(Integer tableNo) {
         this.tableNo = tableNo;

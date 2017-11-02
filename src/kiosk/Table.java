@@ -2,13 +2,12 @@ package kiosk;
 
 public class Table {
     private Integer ticketNo;
-    private Integer tableNo;
+    private String tableNo;
     private Integer nPersons;
     private Integer row;
     private Integer col;
-    public Table (Integer ticketNo,Integer nPersons,Integer tableNo) {
-        this.ticketNo = ticketNo;
-        this.nPersons = nPersons;
+
+    public Table (String tableNo) {
         this.tableNo = tableNo;
 
     }
@@ -17,7 +16,7 @@ public class Table {
         return ticketNo;
     }
 
-    public Integer getTableNo() {
+    public String getTableNo() {
         return tableNo;
     }
 
@@ -25,7 +24,5 @@ public class Table {
         return nPersons;
     }
 
-    public void assignTable(){
-
-    }
+    public void assignTable(){ }
 }
