@@ -9,78 +9,35 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #2C3D4F;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kiosk.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #2C3D4F;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kiosk.Controller">
    <children>
-      <GridPane fx:id="gridPane" layoutX="12.0" layoutY="14.0" prefHeight="700.0" prefWidth="1000.0" style="-fx-border-color: #FFF; -fx-border-width: 3px;">
+      <GridPane fx:id="gridPane" layoutX="4.0" prefHeight="762.0" prefWidth="1018.0" style="-fx-border-color: #FFF; -fx-border-width: 3px;">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="54.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="304.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="271.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="74.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <ImageView fx:id="0_0" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/table_green.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="2">
-               <children>
-                  <ImageView fx:id="0_1" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/table_green.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="3">
-               <children>
-                  <ImageView fx:id="0_2" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/table_green.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="4">
-               <children>
-                  <ImageView fx:id="0_3" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/table_green.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="5">
-               <children>
-                  <ImageView fx:id="0_4" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/table_green.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane  prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <children>
-                  <ImageView fx:id="0_5" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_0_0" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/table_green.png" />
                      </image>
@@ -89,7 +46,7 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
-                  <ImageView fx:id="0_6" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_0_1" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/table_green.png" />
                      </image>
@@ -98,7 +55,7 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <children>
-                  <ImageView fx:id="0_7" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_0_2" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/table_green.png" />
                      </image>
@@ -107,7 +64,7 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <children>
-                  <ImageView fx:id="0_8" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_0_3" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/table_green.png" />
                      </image>
@@ -116,7 +73,7 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="5" GridPane.rowIndex="1">
                <children>
-                  <ImageView fx:id="0_9" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_0_4" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/table_green.png" />
                      </image>
@@ -125,7 +82,7 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <ImageView fx:id="1_0" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_0_5" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/table_green.png" />
                      </image>
@@ -134,7 +91,7 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <children>
-                  <ImageView fx:id="1_1" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_0_6" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/table_green.png" />
                      </image>
@@ -143,7 +100,7 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <children>
-                  <ImageView fx:id="1_2" fitHeight="50.0" fitWidth="100.0" layoutX="50.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_0_7" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/table_green.png" />
                      </image>
@@ -152,7 +109,7 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="4" GridPane.rowIndex="2">
                <children>
-                  <ImageView fx:id="1_3" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_0_8" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/table_green.png" />
                      </image>
@@ -161,7 +118,7 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="5" GridPane.rowIndex="2">
                <children>
-                  <ImageView fx:id="1_4" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_0_9" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@assets/table_green.png" />
                      </image>
@@ -170,195 +127,315 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
-                  <ImageView fx:id="1_5" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_1_0" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_blue.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <children>
-                  <ImageView fx:id="1_6" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_1_1" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_blue.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <children>
-                  <ImageView fx:id="1_7" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_1_2" fitHeight="50.0" fitWidth="100.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_blue.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="4" GridPane.rowIndex="3">
                <children>
-                  <ImageView fx:id="1_8" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_1_3" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_blue.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="5" GridPane.rowIndex="3">
                <children>
-                  <ImageView fx:id="1_9" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_1_4" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_blue.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <children>
-                  <ImageView fx:id="2_0" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_1_5" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_blue.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <children>
-                  <ImageView fx:id="2_1" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_1_6" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_blue.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="3" GridPane.rowIndex="4">
                <children>
-                  <ImageView fx:id="2_2" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_1_7" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_blue.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="4" GridPane.rowIndex="4">
                <children>
-                  <ImageView fx:id="2_3" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_1_8" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_blue.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="5" GridPane.rowIndex="4">
                <children>
-                  <ImageView fx:id="2_4" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_1_9" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_blue.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <ImageView fx:id="table_2_0" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/table_grey.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="2" GridPane.rowIndex="5">
                <children>
-                  <ImageView fx:id="2_5" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_2_1" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_grey.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="3" GridPane.rowIndex="5">
                <children>
-                  <ImageView fx:id="2_6" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_2_2" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_grey.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="4" GridPane.rowIndex="5">
                <children>
-                  <ImageView fx:id="2_7" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_2_3" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_grey.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="2" GridPane.rowIndex="6">
                <children>
-                  <ImageView fx:id="3_0" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_2_6" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_grey.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="3" GridPane.rowIndex="6">
                <children>
-                  <ImageView fx:id="3_1" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_2_7" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_grey.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="8">
+            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="4" GridPane.rowIndex="6">
                <children>
-                  <ImageView fx:id="4_0" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="table_2_8" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_grey.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="9">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.rowIndex="1" GridPane.rowSpan="2">
                <children>
-                  <ImageView fx:id="4_1" fitHeight="60.0" fitWidth="60.0" layoutX="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <Text fill="#00fce2" layoutX="37.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table A" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.rowIndex="3" GridPane.rowSpan="2">
+               <children>
+                  <Text fill="#00fce2" layoutX="37.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table B" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.rowIndex="5" GridPane.rowSpan="2">
+               <children>
+                  <Text fill="#00fce2" layoutX="36.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table C" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <ImageView fx:id="table_2_5" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/table_green.png" />
+                        <Image url="@assets/table_grey.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.rowSpan="2">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.rowIndex="7" GridPane.rowSpan="2">
                <children>
-                  <Text fill="#00fce2" layoutX="25.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table A" textAlignment="CENTER">
+                  <Text fill="#00fce2" layoutX="36.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table D" textAlignment="CENTER">
                      <font>
-                        <Font size="35.0" />
-                     </font></Text>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.rowIndex="2" GridPane.rowSpan="2">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.rowIndex="9" GridPane.rowSpan="2">
                <children>
-                  <Text fill="#00fce2" layoutX="25.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table B" textAlignment="CENTER">
+                  <Text fill="#00fce2" layoutX="37.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table E" textAlignment="CENTER">
                      <font>
-                        <Font size="35.0" />
-                     </font></Text>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.rowIndex="4" GridPane.rowSpan="2">
+            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="7">
                <children>
-                  <Text fill="#00fce2" layoutX="25.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table C" textAlignment="CENTER">
-                     <font>
-                        <Font size="35.0" />
-                     </font></Text>
+                  <ImageView fx:id="table_3_0" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/table_purple.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.rowIndex="6" GridPane.rowSpan="2">
+            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="8">
                <children>
-                  <Text fill="#00fce2" layoutX="25.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table D" textAlignment="CENTER">
-                     <font>
-                        <Font size="35.0" />
-                     </font></Text>
+                  <ImageView fx:id="table_3_1" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/table_purple.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.rowIndex="8" GridPane.rowSpan="2">
+            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="9">
                <children>
-                  <Text fill="#00fce2" layoutX="26.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table E" textAlignment="CENTER">
+                  <ImageView fx:id="table_4_0" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/table_yellow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <children>
+                  <ImageView fx:id="table_4_1" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/table_yellow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="8" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #fff;" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.rowSpan="2">
+               <children>
+                  <Text fx:id="queue_0" fill="#00fce2" layoutX="74.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
                      <font>
-                        <Font size="35.0" />
-                     </font></Text>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #fff;" GridPane.columnIndex="6" GridPane.rowIndex="3" GridPane.rowSpan="2">
+               <children>
+                  <Text fx:id="queue_1" fill="#00fce2" layoutX="78.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #fff;" GridPane.columnIndex="6" GridPane.rowIndex="5" GridPane.rowSpan="2">
+               <children>
+                  <Text fx:id="queue_2" fill="#00fce2" layoutX="75.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #fff;" GridPane.columnIndex="6" GridPane.rowIndex="7" GridPane.rowSpan="2">
+               <children>
+                  <Text fx:id="queue_3" fill="#00fce2" layoutX="72.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #fff;" GridPane.columnIndex="6" GridPane.rowIndex="9" GridPane.rowSpan="2">
+               <children>
+                  <Text fx:id="queue_4" fill="#00fce2" layoutX="74.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;">
+               <children>
+                  <Text fill="#00fce2" layoutX="20.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table Type" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="1" GridPane.columnSpan="5">
+               <children>
+                  <Text fill="#00fce2" layoutX="128.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kiosk Ticketing System" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;" GridPane.columnIndex="6">
+               <children>
+                  <Text fill="#00fce2" layoutX="51.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Queue" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
                </children>
             </AnchorPane>
          </children>

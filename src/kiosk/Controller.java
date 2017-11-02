@@ -27,50 +27,36 @@ public class Controller implements Initializable {
 
     }
     public void setSeat(Table table){
-        Integer minRow = 0;
-        Integer maxRow = 0;
-        Integer maxCol = 0;
-        switch (table.getnPersons()){
-            case 1:
-            case 2:
-                minRow = 0;
-                maxRow = 1;
-                maxCol = 5;
-                break;
-            case 3:
-            case 4:
-                minRow = 2;
-                maxRow = 3;
-                maxCol = 5;
-                break;
-            case 5:
-            case 6:
-                minRow = 4;
-                maxRow = 5;
-                maxCol = 4;
-                break;
-            case 7:
-            case 8:
-                minRow = 6;
-                maxRow = 7;
-                maxCol = 1;
-                break;
-            case 9:
-            case 10:
-                minRow = 8;
-                maxRow = 9;
-                maxCol = 1;
-                break;
-        }
-        for(int i = minRow; i<maxRow; i++) {
-            for(int j = 1; j< maxCol ; j++) {
-                String id = "#"+ i + "_" + "j";
-                ImageView imageView = (ImageView) scene.lookup(id);
-                Image image = new Image(getClass().getResourceAsStream("assets/table_red.png"));
-                imageView.setImage(image);
+        ImageView imageView = (ImageView) scene.lookup(table.getTableNo());
+        String imageUrl = "";
+        if (table.getEmpty()) {
+            imageUrl = "assets/table_red.png";
+        } else {
+            switch (table.getnPersons()) {
+                case 1:
+                case 2:
+                    imageUrl = "assets/table_green.png";
+                    break;
+                case 3:
+                case 4:
+                    imageUrl = "assets/table_blue.png";
+                    break;
+                case 5:
+                case 6:
+                    imageUrl = "assets/table_grey.png";
+                    break;
+                case 7:
+                case 8:
+                    imageUrl = "assets/table_purple.png";
+                    break;
+                case 9:
+                case 10:
+                    imageUrl = "assets/table_yellow.png";
+                    break;
             }
-
         }
+        Image image = new Image(getClass().getResourceAsStream(imageUrl));
+        imageView.setImage(image);
     }
 
 
