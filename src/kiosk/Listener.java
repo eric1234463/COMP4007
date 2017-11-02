@@ -13,8 +13,7 @@ public class Listener implements Runnable{
     private Controller controller;
 
     private Queue queue;
-    private Ticket ticket;
-    Table table;
+    private Table table;
 
     public ArrayList<ArrayList<Table>> tables = new ArrayList<ArrayList<Table>>();
 
@@ -74,7 +73,7 @@ public class Listener implements Runnable{
 
         switch (action) {
             case "TicketReq:":
-                ticket = new Ticket(message);
+                Ticket ticket = new Ticket(message);
                 ticket.setTicketNo(countTicketReq);
                 ticketRep(ticket);
 
