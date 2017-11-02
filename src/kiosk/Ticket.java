@@ -6,6 +6,12 @@ public class Ticket {
     public Integer ticketNo;
     public String tableNo;
 
+    public Ticket(int ticketNo, String tableNo, int nPersons) {
+        this.ticketNo = ticketNo;
+        this.tableNo = tableNo;
+        this.nPersons = nPersons;
+    }
+
     public Ticket(String message) {
         String[] ObjectMapper = message.split(" ");
         this.clientId = ObjectMapper[1];
