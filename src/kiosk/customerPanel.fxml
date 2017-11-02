@@ -19,7 +19,7 @@
                <children>
                   <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="48.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/customer_icon.png" />
+                        <Image url="@assets/table_blue.png" />
                      </image>
                   </ImageView>
                </children></AnchorPane>
@@ -63,7 +63,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0">
                           <children>
-                            <Button fx:id="btn_1" layoutX="34.0" layoutY="38.0" mnemonicParsing="false" onAction="#numberButtonPressed" text="1" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+                            <Button fx:id="btn_1" layoutX="34.0" layoutY="38.0" mnemonicParsing="false" text="1" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
                               <font>
                                 <Font name="System Bold" size="32.0" />
                               </font>
