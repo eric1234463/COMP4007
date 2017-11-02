@@ -4,7 +4,7 @@ public class Ticket {
     public String clientId;
     public Integer nPersons;
     public Integer ticketNo;
-    public Integer tableNo;
+    public String tableNo;
 
     public Ticket(String message) {
         String[] ObjectMapper = message.split(" ");
@@ -24,13 +24,13 @@ public class Ticket {
         return ticketNo;
     }
 
-    public Integer getTableNo() {
+    public String getTableNo() {
         return tableNo;
     }
 
     public void setTicketNo(Integer ticketNo) { this.ticketNo = ticketNo; }
 
-    public void setTableNo(Integer tableNo) {
+    public void setTableNo(String tableNo) {
         this.tableNo = tableNo;
     }
 }
