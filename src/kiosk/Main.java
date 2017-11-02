@@ -16,8 +16,14 @@ public class Main extends Application {
     private Controller controller;
     private FXMLLoader loader;
     private Scene scene;
+
+    private Stage customerPanelStage;
+    private CustomerPanelController customerPanelController;
+    private FXMLLoader customerPanelLoader;
+    private Scene customerPanelScene;
+
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         this.parentStage = primaryStage;
         this.parentStage.setTitle("Kiosk");
         controller = (Controller) replaceSceneContent("table.fxml");
@@ -27,6 +33,11 @@ public class Main extends Application {
         x.start();
         this.parentStage.show();
 
+        this.customerPanelStage = new Stage();
+        this.customerPanelStage.setTitle("Customer Panel");
+        customerPanelController = replaceCustomerSceneContent("customerPanel.fxml");
+        customerPanelController.setScene(customerPanelScene);
+        this.customerPanelStage.show();
     }
 
     public static void main(String[] args) {
@@ -49,6 +60,24 @@ public class Main extends Application {
         this.parentStage.sizeToScene();
 
         return (Initializable) loader.getController();
+    }
+
+    private CustomerPanelController replaceCustomerSceneContent(String fxml) throws Exception {
+        this.customerPanelLoader = new FXMLLoader();
+        InputStream in = Main.class.getResourceAsStream(fxml);
+        this.customerPanelLoader.setBuilderFactory(new JavaFXBuilderFactory());
+        this.customerPanelLoader.setLocation(Main.class.getResource(fxml));
+        AnchorPane page;
+        try {
+            page = (AnchorPane) customerPanelLoader.load(in);
+        } finally {
+            in.close();
+        }
+        customerPanelScene = new Scene(page);
+        this.customerPanelStage.setScene(customerPanelScene);
+        this.customerPanelStage.sizeToScene();
+
+        return customerPanelLoader.getController();
     }
 
 }
