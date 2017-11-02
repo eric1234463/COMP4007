@@ -9,6 +9,7 @@ public class Table {
     public Table (String tableNo, Boolean isEmpty) {
         this.tableNo = tableNo;
         this.isEmpty = true;
+
     }
 
     public Integer getTicketNo() {
@@ -23,8 +24,9 @@ public class Table {
         return nPersons;
     }
 
-    public void assignTable(int ticketNo) {
+    public void assignTable(int ticketNo,Integer nPersons) {
         this.ticketNo = ticketNo;
+        this.nPersons = nPersons;
         isEmpty = false;
     }
 

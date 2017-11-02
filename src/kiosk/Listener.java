@@ -31,7 +31,7 @@ public class Listener implements Runnable{
 
         for(int i = 0; i < 5; i++) {
             for(int tableCol = 0; tableCol < TABLE_TYPE_COL[i] ; tableCol++) {
-                tables.get(i).add(table = new Table(String.valueOf(tableRow)+"_"+String.valueOf(tableCol),true));
+                tables.get(i).add(table = new Table("#table_" + String.valueOf(tableRow)+"_"+String.valueOf(tableCol),true));
                 //System.out.print(String.valueOf(current_tableRow)+"_"+String.valueOf(tableCol)+" ");
             }
             tableRow++;
@@ -110,12 +110,14 @@ public class Listener implements Runnable{
     }
 
     public boolean tryAssignTable(Ticket ticket) {
+
         switch (ticket.getnPersons()) {
             case 1:
             case 2:
                 for (Table table: tables.get(0)) {
                     if(table.getEmpty()) {
-                        table.assignTable(ticket.getTicketNo());
+                        table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
+                        controller.setSeat(table);
                         ticket.setTableNo(table.getTableNo());
                         return true;
                     }
@@ -125,7 +127,8 @@ public class Listener implements Runnable{
             case 4:
                 for (Table table: tables.get(1)) {
                     if(table.getEmpty()) {
-                        table.assignTable(ticket.getTicketNo());
+                        table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
+                        controller.setSeat(table);
                         ticket.setTableNo(table.getTableNo());
                         return true;
                     }
@@ -135,7 +138,8 @@ public class Listener implements Runnable{
             case 6:
                 for (Table table: tables.get(2)) {
                     if(table.getEmpty()) {
-                        table.assignTable(ticket.getTicketNo());
+                        table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
+                        controller.setSeat(table);
                         ticket.setTableNo(table.getTableNo());
                         return true;
                     }
@@ -145,7 +149,8 @@ public class Listener implements Runnable{
             case 8:
                 for (Table table: tables.get(3)) {
                     if(table.getEmpty()) {
-                        table.assignTable(ticket.getTicketNo());
+                        table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
+                        controller.setSeat(table);
                         ticket.setTableNo(table.getTableNo());
                         return true;
                     }
@@ -155,7 +160,8 @@ public class Listener implements Runnable{
             case 10:
                 for (Table table: tables.get(4)) {
                     if(table.getEmpty()) {
-                        table.assignTable(ticket.getTicketNo());
+                        table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
+                        controller.setSeat(table);
                         ticket.setTableNo(table.getTableNo());
                         return true;
                     }

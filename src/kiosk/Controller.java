@@ -29,7 +29,7 @@ public class Controller implements Initializable {
     public void setSeat(Table table){
         ImageView imageView = (ImageView) scene.lookup(table.getTableNo());
         String imageUrl = "";
-        if (table.getEmpty()) {
+        if (!table.getEmpty()) {
             imageUrl = "assets/table_red.png";
         } else {
             switch (table.getnPersons()) {
