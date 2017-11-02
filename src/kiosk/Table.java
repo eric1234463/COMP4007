@@ -4,6 +4,8 @@ public class Table {
     private Integer ticketNo;
     private String tableNo;
     private Integer nPersons;
+
+    public Table (String tableNo) {
     private Boolean isEmpty;
 
 
@@ -26,6 +28,7 @@ public class Table {
         return nPersons;
     }
 
+    public void assignTable(){ }
     public Boolean getEmpty() {
         return isEmpty;
     }
