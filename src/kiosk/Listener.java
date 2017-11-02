@@ -67,10 +67,11 @@ public class Listener implements Runnable{
     public void mapMsg(String message, int countTicketReq) {
         String[] Msg = message.split(" ");
         String action = Msg[0];
+        Ticket ticket;
 
         switch (action) {
             case "TicketReq:":
-                Ticket ticket = new Ticket(message);
+                ticket = new Ticket(message);
                 ticket.setTicketNo(countTicketReq);
                 ticketRep(ticket);
 
@@ -87,7 +88,8 @@ public class Listener implements Runnable{
 
                 break;
             case "TicketAck:":
-
+                ticket = new Ticket(Integer.valueOf(Msg[1]),Msg[2],Integer.valueOf(Msg[3]));
+                TableAssign(ticket);
                 break;
             case "CheckOut:":
 
@@ -163,13 +165,19 @@ public class Listener implements Runnable{
         return false;
     }
 
-
-
     public void ticketCall(Ticket ticket) {
         int ticketNo = ticket.getTicketNo();
         String tableNo = ticket.getTableNo();
 
         printWriter.println("TicketCall: "+ticketNo+" "+tableNo+"");
+        printWriter.flush();
+    }
+
+    public void TableAssign(Ticket ticket) {
+        int ticketNo = ticket.getTicketNo();
+        String tableNo = ticket.getTableNo();
+
+        printWriter.println("TableAssign: "+ticketNo+" "+tableNo+"");
         printWriter.flush();
     }
 
