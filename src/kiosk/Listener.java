@@ -4,7 +4,6 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 
 public class Listener implements Runnable{
@@ -13,7 +12,7 @@ public class Listener implements Runnable{
 
     private Controller controller;
 
-    private Queue queue;
+    private ArrayList<Queue> queues = new ArrayList<Queue>();
     private Table table;
 
     public ArrayList<ArrayList<Table>> tables = new ArrayList<ArrayList<Table>>();
@@ -27,6 +26,9 @@ public class Listener implements Runnable{
 
         for(int i = 0; i < 5; i++) {
             tables.add(new ArrayList<Table>());
+            String queueID = "#queue_" + i;
+            Queue queue = new Queue(queueID);
+            queues.add(queue);
         }
 
         for(int i = 0; i < 5; i++) {
@@ -52,7 +54,6 @@ public class Listener implements Runnable{
     @Override
     public void run() {
         int countTicketReq = 1;
-        queue = new Queue();
         while(true) {
             try {
                 String Msg = bufferedReader.readLine();
@@ -83,7 +84,8 @@ public class Listener implements Runnable{
                         Thread.currentThread().interrupt();
                     }
                 } else {
-                    queue.addTicket(ticket);
+
+                    assignQueue(ticket);
                 }
 
                 break;
@@ -100,6 +102,12 @@ public class Listener implements Runnable{
         }
     }
 
+    public void assignQueue(Ticket ticket) {
+        Integer index = this.findTicketIndex(ticket);
+        queues.get(index).addTicket(ticket);
+        controller.updateQueue(queues.get(index));
+    }
+
     public void ticketRep(Ticket ticket) {
         String clientId = ticket.getClientId();
         int nPersons = ticket.getnPersons();
@@ -109,64 +117,37 @@ public class Listener implements Runnable{
         printWriter.flush();
     }
 
-    public boolean tryAssignTable(Ticket ticket) {
-
+    public Integer findTicketIndex(Ticket ticket){
         switch (ticket.getnPersons()) {
             case 1:
             case 2:
-                for (Table table: tables.get(0)) {
-                    if(table.getEmpty()) {
-                        table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
-                        controller.setSeat(table);
-                        ticket.setTableNo(table.getTableNo());
-                        return true;
-                    }
-                }
-                break;
+                return 0;
             case 3:
             case 4:
-                for (Table table: tables.get(1)) {
-                    if(table.getEmpty()) {
-                        table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
-                        controller.setSeat(table);
-                        ticket.setTableNo(table.getTableNo());
-                        return true;
-                    }
-                }
-                break;
+                return 1;
             case 5:
             case 6:
-                for (Table table: tables.get(2)) {
-                    if(table.getEmpty()) {
-                        table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
-                        controller.setSeat(table);
-                        ticket.setTableNo(table.getTableNo());
-                        return true;
-                    }
-                }
-                break;
+                return 2;
             case 7:
             case 8:
-                for (Table table: tables.get(3)) {
-                    if(table.getEmpty()) {
-                        table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
-                        controller.setSeat(table);
-                        ticket.setTableNo(table.getTableNo());
-                        return true;
-                    }
-                }
-                break;
+                return 3;
             case 9:
             case 10:
-                for (Table table: tables.get(4)) {
-                    if(table.getEmpty()) {
-                        table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
-                        controller.setSeat(table);
-                        ticket.setTableNo(table.getTableNo());
-                        return true;
-                    }
-                }
-                break;
+                return 4;
+        }
+        return 0;
+    }
+
+    public boolean tryAssignTable(Ticket ticket) {
+        Integer index = this.findTicketIndex(ticket);
+        for (Table table: tables.get(index)) {
+            if(table.getEmpty()) {
+                controller.setSeat(table);
+                table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
+                controller.updateLastTicketCall(table);
+                ticket.setTableNo(table.getTableNo());
+                return true;
+            }
         }
         return false;
     }
