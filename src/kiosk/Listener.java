@@ -12,7 +12,8 @@ public class Listener implements Runnable{
 
     private Controller controller;
 
-    private ArrayList<Queue> queues = new ArrayList<Queue>();
+//    private ArrayList<Queue> queues = new ArrayList<Queue>();
+    private QueueManager queueManager=new QueueManager();
     private Table currentTable;
 
     public ArrayList<ArrayList<Table>> tables = new ArrayList<ArrayList<Table>>();
@@ -28,7 +29,8 @@ public class Listener implements Runnable{
             tables.add(new ArrayList<Table>());
             String queueID = "#queue_" + i;
             Queue queue = new Queue(queueID);
-            queues.add(queue);
+//            queues.add(queue);
+            queueManager.addQueues(queue);
         }
 
         for(int i = 0; i < 5; i++) {
@@ -79,6 +81,7 @@ public class Listener implements Runnable{
                 ticketRep(ticket);
 
                 //TODO: add ticket to queue
+                assignQueue(ticket);
 
 //                if (tryAssignTable(ticket)){
 //                    try {
@@ -108,8 +111,10 @@ public class Listener implements Runnable{
 
     public void assignQueue(Ticket ticket) {
         Integer index = this.findTicketIndex(ticket);
-        queues.get(index).addTicket(ticket);
-        controller.updateQueue(queues.get(index));
+//        queues.get(index).addTicket(ticket);
+        queueManager.getQueue(index).addTicket(ticket);
+//        controller.updateQueue(queues.get(index));
+        controller.updateQueue(queueManager.getQueue(index));
     }
 
     public void ticketRep(Ticket ticket) {
