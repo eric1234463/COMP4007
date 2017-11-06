@@ -78,16 +78,18 @@ public class Listener implements Runnable{
                 ticket.setTicketNo(countTicketReq);
                 ticketRep(ticket);
 
-                if (tryAssignTable(ticket)){
-                    try {
-                        Thread.sleep(1000);
-                        ticketCall(ticket);
-                    }catch(InterruptedException ex) {
-                        Thread.currentThread().interrupt();
-                    }
-                } else {
-                    assignQueue(ticket);
-                }
+                //TODO: add ticket to queue
+
+//                if (tryAssignTable(ticket)){
+//                    try {
+//                        Thread.sleep(1000);
+//                        ticketCall(ticket);
+//                    }catch(InterruptedException ex) {
+//                        Thread.currentThread().interrupt();
+//                    }
+//                } else {
+//                    assignQueue(ticket);
+//                }
 
                 break;
             case "TicketAck:":
