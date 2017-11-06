@@ -1,15 +1,14 @@
 package kiosk;
 
 public class Client {
-    private Integer tableNo;
+    private String  tableNo;
     private double totalSpending;
-    public Client (String message) {
-        String[] ObjectMapper = message.split(" ");
-        this.tableNo = Integer.parseInt(ObjectMapper[1]);
-        this.totalSpending = Double.parseDouble(ObjectMapper[2]);
+    public Client (String tableNo, String  totalSpending) {
+        this.tableNo = tableNo;
+        this.totalSpending = Double.parseDouble(totalSpending);
     }
 
-    public Integer getTableNo() {
+    public String getTableNo() {
         return tableNo;
     }
 

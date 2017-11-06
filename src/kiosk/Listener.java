@@ -13,7 +13,7 @@ public class Listener implements Runnable{
     private Controller controller;
 
     private ArrayList<Queue> queues = new ArrayList<Queue>();
-    private Table table;
+    private Table currentTable;
 
     public ArrayList<ArrayList<Table>> tables = new ArrayList<ArrayList<Table>>();
 
@@ -33,7 +33,8 @@ public class Listener implements Runnable{
 
         for(int i = 0; i < 5; i++) {
             for(int tableCol = 0; tableCol < TABLE_TYPE_COL[i] ; tableCol++) {
-                tables.get(i).add(table = new Table("#table_" + String.valueOf(tableRow)+"_"+String.valueOf(tableCol),true));
+                Table table = new Table("#table_" + String.valueOf(tableRow)+"_"+String.valueOf(tableCol),true);
+                tables.get(i).add(table);
                 //System.out.print(String.valueOf(current_tableRow)+"_"+String.valueOf(tableCol)+" ");
             }
             tableRow++;
@@ -65,6 +66,7 @@ public class Listener implements Runnable{
             }
         }
     }
+
     public void mapMsg(String message, int countTicketReq) {
         String[] Msg = message.split(" ");
         String action = Msg[0];
@@ -80,11 +82,10 @@ public class Listener implements Runnable{
                     try {
                         Thread.sleep(1000);
                         ticketCall(ticket);
-                    } catch(InterruptedException ex) {
+                    }catch(InterruptedException ex) {
                         Thread.currentThread().interrupt();
                     }
                 } else {
-
                     assignQueue(ticket);
                 }
 
@@ -94,7 +95,8 @@ public class Listener implements Runnable{
                 TableAssign(ticket);
                 break;
             case "CheckOut:":
-
+                Client client = new Client(Msg[1],Msg[2]);
+                checkOut(client);
                 break;
 
             default: System.out.println("\t " + "error" + "");
@@ -142,9 +144,7 @@ public class Listener implements Runnable{
         Integer index = this.findTicketIndex(ticket);
         for (Table table: tables.get(index)) {
             if(table.getEmpty()) {
-                controller.setSeat(table);
-                table.assignTable(ticket.getTicketNo(),ticket.getnPersons());
-                controller.updateLastTicketCall(table);
+                this.currentTable = table;
                 ticket.setTableNo(table.getTableNo());
                 return true;
             }
@@ -164,8 +164,22 @@ public class Listener implements Runnable{
         int ticketNo = ticket.getTicketNo();
         String tableNo = ticket.getTableNo();
 
+        controller.setSeat(currentTable);
+        currentTable.assignTable(ticket.getTicketNo(),ticket.getnPersons());
+        controller.updateLastTicketCall(currentTable);
+
+        System.out.println("TableAssign: "+ticketNo+" "+tableNo+"");
         printWriter.println("TableAssign: "+ticketNo+" "+tableNo+"");
         printWriter.flush();
+    }
+
+    public void checkOut(Client client) {
+        String tableNo = client.getTableNo();
+        Integer row = Integer.parseInt(tableNo.split("_")[1]);
+        Integer col = Integer.parseInt(tableNo.split("_")[2]);
+        Table tableToBeCheckout = this.tables.get(row).get(col);
+        controller.setSeat(tableToBeCheckout);
+        tableToBeCheckout.setEmpty(true);
     }
 
 }

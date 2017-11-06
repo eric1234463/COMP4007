@@ -9,7 +9,6 @@ public class Table {
     public Table (String tableNo, Boolean isEmpty) {
         this.tableNo = tableNo;
         this.isEmpty = true;
-
     }
 
     public Integer getTicketNo() {
@@ -34,11 +33,12 @@ public class Table {
         return isEmpty;
     }
 
-    public void setEmpty(Boolean empty) { isEmpty = true; }
+    public void setEmpty(Boolean empty) { isEmpty = empty; }
 
     //for debug
     @Override
     public String toString() {
         return getClass().getSimpleName() + "[tableNo= " + tableNo + ", isEmpty= "+ isEmpty + "]";
     }
+
 }
