@@ -5,6 +5,7 @@ public class Ticket {
     public Integer nPersons;
     public Integer ticketNo;
     public String tableNo;
+    public long offerTime;
 
     public Ticket(int ticketNo, String tableNo, int nPersons) {
         this.ticketNo = ticketNo;
@@ -16,6 +17,7 @@ public class Ticket {
         String[] ObjectMapper = message.split(" ");
         this.clientId = ObjectMapper[1];
         this.nPersons = Integer.parseInt(ObjectMapper[2]);
+        this.offerTime=System.currentTimeMillis();
     }
 
     public String getClientId() {
