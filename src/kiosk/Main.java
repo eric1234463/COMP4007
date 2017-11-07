@@ -29,8 +29,10 @@ public class Main extends Application {
         controller = (Controller) replaceSceneContent("table.fxml");
         controller.setScene(scene);
         Listener listener = new Listener(controller);
+
         Thread x = new Thread(listener);
         x.start();
+
         this.parentStage.show();
 
         this.customerPanelStage = new Stage();

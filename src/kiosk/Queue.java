@@ -8,9 +8,6 @@ public class Queue {
     public Queue(String id){
         this.id = id;
     }
-    public void addTicket(Ticket ticket) {
-        tickets.add(ticket);
-    }
 
     public String getId() {
         return id;

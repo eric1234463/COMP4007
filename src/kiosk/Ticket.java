@@ -3,21 +3,44 @@ package kiosk;
 public class Ticket {
     public String clientId;
     public Integer nPersons;
-    public Integer ticketNo;
-    public String tableNo;
+    public String ticketNo;
+    private String tableNo;
+    private Integer index;
 
-    public Ticket(int ticketNo, String tableNo, int nPersons) {
-        this.ticketNo = ticketNo;
-        this.tableNo = tableNo;
-        this.nPersons = nPersons;
-    }
-
-    public Ticket(String message) {
+    public Ticket(String message,String ticketNo) {
         String[] ObjectMapper = message.split(" ");
+        this.ticketNo = ticketNo;
         this.clientId = ObjectMapper[1];
         this.nPersons = Integer.parseInt(ObjectMapper[2]);
+        switch (this.nPersons) {
+            case 1:
+            case 2:
+                this.index = 0;
+                break;
+            case 3:
+            case 4:
+                this.index = 1;
+                break;
+            case 5:
+            case 6:
+                this.index = 2;
+                break;
+            case 7:
+            case 8:
+                this.index = 3;
+                break;
+            case 9:
+            case 10:
+                this.index = 4;
+                break;
+        }
     }
 
+
+
+    public Integer getIndex() {
+        return index;
+    }
     public String getClientId() {
         return clientId;
     }
@@ -26,7 +49,7 @@ public class Ticket {
         return nPersons;
     }
 
-    public Integer getTicketNo() {
+    public String getTicketNo() {
         return ticketNo;
     }
 
@@ -34,9 +57,14 @@ public class Ticket {
         return tableNo;
     }
 
-    public void setTicketNo(Integer ticketNo) { this.ticketNo = ticketNo; }
+    public void setTicketNo(String ticketNo) { this.ticketNo = ticketNo; }
 
     public void setTableNo(String tableNo) {
         this.tableNo = tableNo;
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "[ticketNo= " + this.ticketNo + ", tableNo= "+ this.tableNo + "]";
     }
 }
