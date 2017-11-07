@@ -101,14 +101,4 @@ public class Listener implements Runnable{
         printWriter.println("TableAssign: "+ticketNo+" "+tableNo+"");
         printWriter.flush();
     }
-
-    public void checkOut(Client client) {
-//        String tableNo = client.getTableNo();
-//        Integer row = Integer.parseInt(tableNo.split("_")[1]);
-//        Integer col = Integer.parseInt(tableNo.split("_")[2]);
-//        Table tableToBeCheckout = this.tables.get(row).get(col);
-//        controller.setSeat(tableToBeCheckout);
-//        tableToBeCheckout.setEmpty(true);
-    }
-
 }

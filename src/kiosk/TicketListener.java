@@ -28,7 +28,6 @@ public class TicketListener {
     }
     public void ticketCall(Ticket ticket,String tableNo) {
         ticket.setTableNo(tableNo);
-
         this.listener.ticketCall(ticket);
     }
 

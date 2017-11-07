@@ -24,11 +24,13 @@ public class QueueListener implements Runnable {
     public void queueToTable(Integer index){
 
         Table table = this.listener.tableListener.checkEmptyTable(index);
-        if ( !table.equals(null) ) {
+        if ( table != null ) {
             Ticket ticket = this.queues.get(index).tickets.get(0);
-            this.listener.ticketListener.ticketCall(ticket, table.getTableNo());
-            this.queues.get(index).tickets.remove(ticket);
-            this.listener.controller.updateQueue(this.queues.get(index));
+            if( ticket != null) {
+                this.listener.ticketListener.ticketCall(ticket, table.getTableNo());
+                this.queues.get(index).tickets.remove(ticket);
+                this.listener.controller.updateQueue(this.queues.get(index));
+            }
         }
     }
 
@@ -37,7 +39,7 @@ public class QueueListener implements Runnable {
     public void run(){
         while (true) {
             try {
-                Thread.sleep(500);
+                Thread.sleep(1500);
                 for (int index = 0; index < 5; index++) {
                     if (this.queues.get(index).tickets.size() > 0) {
                         this.queueToTable(index);
