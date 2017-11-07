@@ -57,9 +57,12 @@ public class Listener implements Runnable{
             case "TicketReq:":
                 String ticketNo = String.valueOf(countTicketReq);
                 ticket = new Ticket(message,ticketNo);
-                this.queueListener.addTicketToQueue(ticket);
-                this.ticketListener.addTicketToList(ticket);
-                this.ticketRep(ticket);
+                if (this.queueListener.addTicketToQueue(ticket)) {
+                    this.ticketListener.addTicketToList(ticket);
+                    this.ticketRep(ticket);
+                } else {
+                    this.queueTooLong(ticket);
+                }
                 break;
             case "TicketAck:":
                 ticket = this.ticketListener.getTicketByTicketNo(Msg[1]);
@@ -101,4 +104,14 @@ public class Listener implements Runnable{
         printWriter.println("TableAssign: "+ticketNo+" "+tableNo+"");
         printWriter.flush();
     }
+
+    public void queueTooLong(Ticket ticket){
+        String clientId = ticket.getClientId();
+        Integer nPerson = ticket.getnPersons();
+        System.out.println("QueueTooLong: "+clientId+" "+nPerson+"");
+        printWriter.println("QueueTooLong: "+clientId+" "+nPerson+"");
+        printWriter.flush();
+
+    }
+
 }

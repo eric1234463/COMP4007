@@ -31,6 +31,4 @@ public class TicketListener {
         this.listener.ticketCall(ticket);
     }
 
-
-
 }

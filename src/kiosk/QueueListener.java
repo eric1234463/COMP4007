@@ -17,8 +17,13 @@ public class QueueListener implements Runnable {
         }
     }
 
-    public void addTicketToQueue(Ticket ticket) {
-        this.queues.get(ticket.getIndex()).tickets.add(ticket);
+    public Boolean addTicketToQueue(Ticket ticket) {
+        if (this.queues.get(ticket.getIndex()).tickets.size() < 5) {
+            this.queues.get(ticket.getIndex()).tickets.add(ticket);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public void queueToTable(Integer index){
@@ -34,6 +39,9 @@ public class QueueListener implements Runnable {
         }
     }
 
+    public ArrayList<Queue> getQueues() {
+        return queues;
+    }
 
     @Override
     public void run(){
