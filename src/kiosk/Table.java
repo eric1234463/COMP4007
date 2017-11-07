@@ -28,7 +28,15 @@ public class Table {
         return nPersons;
     }
 
-    public void assignTable(String ticketNo,Integer nPersons) {
+    public void setTicketNo(String ticketNo) {
+        this.ticketNo = ticketNo;
+    }
+
+    public void setnPersons(Integer nPersons) {
+        this.nPersons = nPersons;
+    }
+
+    public void assignTable(String ticketNo, Integer nPersons) {
         this.ticketNo = ticketNo;
         this.nPersons = nPersons;
         isEmpty = false;

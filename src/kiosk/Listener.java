@@ -4,6 +4,7 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Timer;
 
 
 public class Listener implements Runnable{
@@ -34,10 +35,9 @@ public class Listener implements Runnable{
         queueListener = new QueueListener(this);
         ticketListener = new TicketListener(this);
         int countTicketReq = 1;
-
+        Timer timer = new Timer();
+        timer.schedule(queueListener, 0, 2000);
         while(true) {
-            Thread queueThread = new Thread(queueListener);
-            queueThread.start();
             try {
                 String Msg = bufferedReader.readLine();
                 System.out.println(Msg);

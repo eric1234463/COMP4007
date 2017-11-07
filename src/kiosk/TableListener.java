@@ -45,6 +45,8 @@ public class TableListener  {
         Table table = this.tables.get(row).get(col);
         table.setEmpty(true);
         this.listener.controller.setSeat(table);
+        table.setTicketNo(null);
+        table.setnPersons(null);
     }
 
 }

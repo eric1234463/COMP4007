@@ -4,8 +4,9 @@ import kiosk.Queue;
 
 
 import java.util.ArrayList;
+import java.util.TimerTask;
 
-public class QueueListener implements Runnable {
+public class QueueListener extends TimerTask implements Runnable {
     private ArrayList<Queue> queues = new ArrayList<Queue>();
     private Listener listener;
 
@@ -45,19 +46,10 @@ public class QueueListener implements Runnable {
 
     @Override
     public void run(){
-        while (true) {
-            try {
-                Thread.sleep(1500);
-                for (int index = 0; index < 5; index++) {
-                    if (this.queues.get(index).tickets.size() > 0) {
-                        this.queueToTable(index);
-                    }
-                }
-
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+        for (int index = 0; index < 5; index++) {
+            if (this.queues.get(index).tickets.size() > 0) {
+                this.queueToTable(index);
             }
-
         }
     }
 
