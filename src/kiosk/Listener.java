@@ -3,7 +3,6 @@ package kiosk;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
 import java.util.Timer;
 
 
@@ -15,6 +14,7 @@ public class Listener implements Runnable{
     public TableListener tableListener;
     public QueueListener queueListener;
     public TicketListener ticketListener;
+    public Integer[] countTicketReq = {10000,20000,30000,40000,50000};
     public Listener(Controller controller){
         this.controller = controller;
 
@@ -34,29 +34,27 @@ public class Listener implements Runnable{
         tableListener = new TableListener(this);
         queueListener = new QueueListener(this);
         ticketListener = new TicketListener(this);
-        int countTicketReq = 1;
         Timer timer = new Timer();
-        timer.schedule(queueListener, 0, 2000);
+        timer.schedule(queueListener, 0, 500);
         while(true) {
             try {
                 String Msg = bufferedReader.readLine();
                 System.out.println(Msg);
-                mapMsg(Msg,countTicketReq);
-                countTicketReq += 1;
+                mapMsg(Msg);
             }catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
 
-    public void mapMsg(String message , int countTicketReq) {
+    public void mapMsg(String message ) {
         String[] Msg = message.split(" ");
         String action = Msg[0];
         Ticket ticket;
         switch (action) {
             case "TicketReq:":
-                String ticketNo = String.valueOf(countTicketReq);
-                ticket = new Ticket(message,ticketNo);
+                Integer ticketNo = this.generateTicktetNo(Msg[2]);
+                ticket = new Ticket(message,String.valueOf(ticketNo));
                 if (this.queueListener.addTicketToQueue(ticket)) {
                     this.ticketListener.addTicketToList(ticket);
                     this.ticketRep(ticket);
@@ -77,7 +75,35 @@ public class Listener implements Runnable{
     }
 
 
+    public Integer generateTicktetNo(String nPersons){
+        Integer index;
+        switch (Integer.parseInt(nPersons)){
+            case 1:
+            case 2:
+                index = 0;
+                return this.countTicketReq[index]++;
 
+            case 3:
+            case 4:
+                index = 1;
+                return this.countTicketReq[index]++;
+
+            case 5:
+            case 6:
+                index = 2;
+                this.countTicketReq[index]++;
+                return this.countTicketReq[index]++;
+            case 7:
+            case 8:
+                index = 3;
+                return this.countTicketReq[index]++;
+            case 9:
+            case 10:
+                index = 4;
+                return this.countTicketReq[index]++;
+        }
+        return 0;
+    }
     public void ticketRep(Ticket ticket) {
         String clientId = ticket.getClientId();
         int nPersons = ticket.getnPersons();
@@ -96,7 +122,6 @@ public class Listener implements Runnable{
     }
 
     public void tableAssign(Ticket ticket) {
-
         String ticketNo = ticket.getTicketNo();
         String tableNo = ticket.getTableNo();
         this.tableListener.tableAssign(tableNo,ticket);

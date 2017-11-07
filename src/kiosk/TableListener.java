@@ -21,11 +21,10 @@ public class TableListener  {
         }
     }
 
-    public Table checkEmptyTable(Integer index){
-        for (Table table : tables.get(index)) {
-            if( table.getEmpty() ){
-               return table;
-            }
+    public Table checkEmptyTable(Integer row, Integer col){
+        Table table = this.tables.get(row).get(col);
+        if( table.getEmpty()){
+           return table;
         }
         return null;
     }

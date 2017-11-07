@@ -4,6 +4,7 @@ import kiosk.Queue;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.TimerTask;
 
 public class QueueListener extends TimerTask implements Runnable {
@@ -19,7 +20,7 @@ public class QueueListener extends TimerTask implements Runnable {
     }
 
     public Boolean addTicketToQueue(Ticket ticket) {
-        if (this.queues.get(ticket.getIndex()).tickets.size() < 5) {
+        if (this.queues.get(ticket.getIndex()).tickets.size() < 8) {
             this.queues.get(ticket.getIndex()).tickets.add(ticket);
             return true;
         } else {
@@ -27,16 +28,20 @@ public class QueueListener extends TimerTask implements Runnable {
         }
     }
 
-    public void queueToTable(Integer index){
-
-        Table table = this.listener.tableListener.checkEmptyTable(index);
-        if ( table != null ) {
-            Ticket ticket = this.queues.get(index).tickets.get(0);
-            if( ticket != null) {
-                this.listener.ticketListener.ticketCall(ticket, table.getTableNo());
-                this.queues.get(index).tickets.remove(ticket);
-                this.listener.controller.updateQueue(this.queues.get(index));
+    public void queueToTable(Integer row){
+        Integer col = 0;
+        Iterator<Ticket> tickets = this.queues.get(row).tickets.iterator();
+        while (tickets.hasNext()) {
+            Ticket ticket = tickets.next();
+            Table table = this.listener.tableListener.checkEmptyTable(row,col);
+            if (table != null) {
+                if (ticket != null) {
+                    this.listener.ticketListener.ticketCall(ticket, table.getTableNo());
+                    tickets.remove();
+                    this.listener.controller.updateQueue(this.queues.get(row));
+                }
             }
+            col++;
         }
     }
 
