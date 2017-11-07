@@ -21,10 +21,12 @@ public class TableListener  {
         }
     }
 
-    public Table checkEmptyTable(Integer row, Integer col){
-        Table table = this.tables.get(row).get(col);
-        if( table.getEmpty()){
-           return table;
+    public Table checkEmptyTable(Integer row){
+        for(Table table: this.tables.get(row)) {
+            if (table.getEmpty()) {
+                table.setEmpty(false);
+                return table;
+            }
         }
         return null;
     }
@@ -33,7 +35,6 @@ public class TableListener  {
         Integer row = Integer.parseInt(tableNo.split("_")[1]);
         Integer col = Integer.parseInt(tableNo.split("_")[2]);
         Table table = this.tables.get(row).get(col);
-        table.assignTable(ticket.ticketNo,ticket.nPersons);
         this.listener.controller.setSeat(table);
         this.listener.controller.updateLastTicketCall(table);
     }
@@ -44,8 +45,7 @@ public class TableListener  {
         Table table = this.tables.get(row).get(col);
         table.setEmpty(true);
         this.listener.controller.setSeat(table);
-        table.setTicketNo(null);
-        table.setnPersons(null);
+        table.clear();
     }
 
 }

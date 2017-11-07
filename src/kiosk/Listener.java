@@ -35,7 +35,7 @@ public class Listener implements Runnable{
         queueListener = new QueueListener(this);
         ticketListener = new TicketListener(this);
         Timer timer = new Timer();
-        timer.schedule(queueListener, 0, 500);
+        timer.schedule(queueListener, 0, 200);
         while(true) {
             try {
                 String Msg = bufferedReader.readLine();

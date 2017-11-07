@@ -36,19 +36,15 @@ public class Table {
         this.nPersons = nPersons;
     }
 
-    public void assignTable(String ticketNo, Integer nPersons) {
-        this.ticketNo = ticketNo;
-        this.nPersons = nPersons;
-        isEmpty = false;
-    }
-
-
     public Boolean getEmpty() {
         return isEmpty;
     }
 
     public void setEmpty(Boolean empty) { isEmpty = empty; }
-
+    public void clear(){
+        this.nPersons = null;
+        this.ticketNo = null;
+    }
     //for debug
     @Override
     public String toString() {

@@ -33,13 +33,13 @@ public class QueueListener extends TimerTask implements Runnable {
         Iterator<Ticket> tickets = this.queues.get(row).tickets.iterator();
         while (tickets.hasNext()) {
             Ticket ticket = tickets.next();
-            Table table = this.listener.tableListener.checkEmptyTable(row,col);
+            Table table = this.listener.tableListener.checkEmptyTable(row);
             if (table != null) {
-                if (ticket != null) {
-                    this.listener.ticketListener.ticketCall(ticket, table.getTableNo());
-                    tickets.remove();
-                    this.listener.controller.updateQueue(this.queues.get(row));
-                }
+                table.setTicketNo(ticket.ticketNo);
+                table.setnPersons(ticket.nPersons);
+                this.listener.ticketListener.ticketCall(ticket, table.getTableNo());
+                tickets.remove();
+                this.listener.controller.updateQueue(this.queues.get(row));
             }
             col++;
         }
