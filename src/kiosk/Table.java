@@ -42,7 +42,7 @@ public class Table {
 
     public void setEmpty(Boolean empty) { isEmpty = empty; }
     public void clear(){
-        this.nPersons = null;
+        this.nPersons = 0;
         this.ticketNo = null;
     }
     //for debug
