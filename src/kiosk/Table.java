@@ -43,7 +43,7 @@ public class Table {
     public void setEmpty(Boolean empty) { isEmpty = empty; }
     public void clear(){
         this.nPersons = 0;
-        this.ticketNo = null;
+        this.ticketNo = "";
     }
     //for debug
     @Override
