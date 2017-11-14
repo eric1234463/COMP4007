@@ -1,45 +1,24 @@
 package kiosk;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
+import java.util.Timer;
 
-
-public class Listener implements Runnable{
+public class Listener implements Runnable {
     private static final int LISTEN_PORT = 54321;
-    private static final int[] TABLE_TYPE_COL = {10,10,8,2,2};
-
-    private Controller controller;
-
-    private ArrayList<Queue> queues = new ArrayList<Queue>();
-    private Table currentTable;
-
-    public ArrayList<ArrayList<Table>> tables = new ArrayList<ArrayList<Table>>();
-
+    public Controller controller;
     private BufferedReader bufferedReader;
     private PrintWriter printWriter;
+    public TableListener tableListener;
 
-    public Listener(Controller controller){
+    QueueListener[] queueListeners = new QueueListener[5];
+
+    public Integer[] countTicketReq = {10001, 20001, 30001, 40001, 50001};
+
+    public Listener(Controller controller) {
         this.controller = controller;
-        int tableRow = 0;
-
-        for(int i = 0; i < 5; i++) {
-            tables.add(new ArrayList<Table>());
-            String queueID = "#queue_" + i;
-            Queue queue = new Queue(queueID);
-            queues.add(queue);
-        }
-
-        for(int i = 0; i < 5; i++) {
-            for(int tableCol = 0; tableCol < TABLE_TYPE_COL[i] ; tableCol++) {
-                Table table = new Table("#table_" + String.valueOf(tableRow)+"_"+String.valueOf(tableCol),true);
-                tables.get(i).add(table);
-                //System.out.print(String.valueOf(current_tableRow)+"_"+String.valueOf(tableCol)+" ");
-            }
-            tableRow++;
-        }
-
         try {
             ServerSocket serverSocket = new ServerSocket(LISTEN_PORT);
             System.out.println("Server start...");
@@ -49,137 +28,115 @@ public class Listener implements Runnable{
             printWriter = new PrintWriter(socket.getOutputStream());
 
             System.out.println("\tWAIT Client Msg ...");
-        } catch(Exception ex) {}
+        } catch (Exception ex) {
+        }
     }
 
     @Override
     public void run() {
-        int countTicketReq = 1;
-        while(true) {
+        tableListener = new TableListener(this);
+
+        for (int i = 0; i < 5; i++) {
+            queueListeners[i] = new QueueListener(this, i);
+        }
+
+        while (true) {
             try {
                 String Msg = bufferedReader.readLine();
-                System.out.println(Msg);
-                mapMsg(Msg, countTicketReq);
-                countTicketReq+=1;
-            }catch (IOException e) {
+                //System.out.println(Msg);
+                mapMsg(Msg);
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
 
-    public void mapMsg(String message, int countTicketReq) {
+    public void mapMsg(String message) {
         String[] Msg = message.split(" ");
         String action = Msg[0];
         Ticket ticket;
-
         switch (action) {
             case "TicketReq:":
-                ticket = new Ticket(message);
-                ticket.setTicketNo(countTicketReq);
-                ticketRep(ticket);
-
-                if (tryAssignTable(ticket)){
-                    try {
-                        Thread.sleep(1000);
-                        ticketCall(ticket);
-                    }catch(InterruptedException ex) {
-                        Thread.currentThread().interrupt();
-                    }
+                //System.out.println(System.currentTimeMillis());
+                Integer ticketNo = this.generateTicktetNo(Msg[2]);
+                ticket = new Ticket(message, String.valueOf(ticketNo));
+                int index = ticketNo / 10000;
+                if (this.queueListeners[index - 1].addTicketToQueue(ticket)) {
+                    this.ticketRep(ticket);
                 } else {
-                    assignQueue(ticket);
+                    this.queueTooLong(ticket);
                 }
 
                 break;
             case "TicketAck:":
-                ticket = new Ticket(Integer.valueOf(Msg[1]),Msg[2],Integer.valueOf(Msg[3]));
-                TableAssign(ticket);
+                this.tableAssign(Msg[1], Msg[2]);
+                this.tableListener.tableAssign(Msg[2]);
                 break;
             case "CheckOut:":
-                Client client = new Client(Msg[1],Msg[2]);
-                checkOut(client);
+                this.tableListener.checkOut(Msg[1]);
                 break;
-
-            default: System.out.println("\t " + "error" + "");
+            default:
+                System.out.println("\t " + "error" + "");
                 break;
         }
     }
 
-    public void assignQueue(Ticket ticket) {
-        Integer index = this.findTicketIndex(ticket);
-        queues.get(index).addTicket(ticket);
-        controller.updateQueue(queues.get(index));
+
+    public Integer generateTicktetNo(String nPersons) {
+        Integer index;
+        switch (Integer.parseInt(nPersons)) {
+            case 1:
+            case 2:
+                index = 0;
+                return this.countTicketReq[index]++;
+            case 3:
+            case 4:
+                index = 1;
+                return this.countTicketReq[index]++;
+            case 5:
+            case 6:
+                index = 2;
+                return this.countTicketReq[index]++;
+            case 7:
+            case 8:
+                index = 3;
+                return this.countTicketReq[index]++;
+            case 9:
+            case 10:
+                index = 4;
+                return this.countTicketReq[index]++;
+        }
+        return 0;
     }
 
     public void ticketRep(Ticket ticket) {
         String clientId = ticket.getClientId();
         int nPersons = ticket.getnPersons();
-        int ticketNo = ticket.getTicketNo();
-        //System.out.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
-        printWriter.println("TicketRep: "+clientId+" "+nPersons+" "+ticketNo+"");
+        String ticketNo = ticket.getTicketNo();
+        //System.out.println("TicketRep: " + clientId + " " + nPersons + " " + ticketNo + "");
+        printWriter.println("TicketRep: " + clientId + " " + nPersons + " " + ticketNo + "");
         printWriter.flush();
     }
 
-    public Integer findTicketIndex(Ticket ticket){
-        switch (ticket.getnPersons()) {
-            case 1:
-            case 2:
-                return 0;
-            case 3:
-            case 4:
-                return 1;
-            case 5:
-            case 6:
-                return 2;
-            case 7:
-            case 8:
-                return 3;
-            case 9:
-            case 10:
-                return 4;
-        }
-        return 0;
-    }
-
-    public boolean tryAssignTable(Ticket ticket) {
-        Integer index = this.findTicketIndex(ticket);
-        for (Table table: tables.get(index)) {
-            if(table.getEmpty()) {
-                this.currentTable = table;
-                ticket.setTableNo(table.getTableNo());
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public void ticketCall(Ticket ticket) {
-        int ticketNo = ticket.getTicketNo();
-        String tableNo = ticket.getTableNo();
-
-        printWriter.println("TicketCall: "+ticketNo+" "+tableNo+"");
+    public void ticketCall(String ticketNo, String tableNo) {
+        System.out.println("TicketCall: " + ticketNo + " " + tableNo + "");
+        printWriter.println("TicketCall: " + ticketNo + " " + tableNo + "");
         printWriter.flush();
     }
 
-    public void TableAssign(Ticket ticket) {
-        int ticketNo = ticket.getTicketNo();
-        String tableNo = ticket.getTableNo();
-
-        controller.setSeat(currentTable);
-        currentTable.assignTable(ticket.getTicketNo(),ticket.getnPersons());
-        controller.updateLastTicketCall(currentTable);
-
-        System.out.println("TableAssign: "+ticketNo+" "+tableNo+"");
-        printWriter.println("TableAssign: "+ticketNo+" "+tableNo+"");
+    public void tableAssign(String ticketNo, String tableNo) {
+        //System.out.println("get ACK and do TableAssign: " + ticketNo + " " + tableNo + "");
+        printWriter.println("TableAssign: " + ticketNo + " " + tableNo + "");
         printWriter.flush();
     }
 
-    public void checkOut(Client client) {
-        String tableNo = client.getTableNo();
-        Integer row = Integer.parseInt(tableNo.split("_")[1]);
-        Integer col = Integer.parseInt(tableNo.split("_")[2]);
-        Table tableToBeCheckout = this.tables.get(row).get(col);
-        controller.setSeat(tableToBeCheckout);
-        tableToBeCheckout.setEmpty(true);
+    public void queueTooLong(Ticket ticket) {
+        String clientId = ticket.getClientId();
+        Integer nPerson = ticket.getnPersons();
+        System.out.println("QueueTooLong: " + clientId + " " + nPerson + "");
+        printWriter.println("QueueTooLong: " + clientId + " " + nPerson + "");
+        printWriter.flush();
+
     }
 
 }

@@ -1,17 +1,19 @@
 package kiosk;
 
 public class Table {
-    private Integer ticketNo;
+    private String ticketNo;
     private String tableNo;
     private Integer nPersons;
     private Boolean isEmpty;
+    private Integer index;
 
-    public Table (String tableNo, Boolean isEmpty) {
+    public Table(String tableNo, Boolean isEmpty, Integer index) {
         this.tableNo = tableNo;
-        this.isEmpty = true;
+        this.isEmpty = isEmpty;
+        this.index = index;
     }
 
-    public Integer getTicketNo() {
+    public String getTicketNo() {
         return ticketNo;
     }
 
@@ -23,22 +25,31 @@ public class Table {
         return nPersons;
     }
 
-    public void assignTable(int ticketNo,Integer nPersons) {
+    public void setTicketNo(String ticketNo) {
         this.ticketNo = ticketNo;
+    }
+
+    public void setnPersons(Integer nPersons) {
         this.nPersons = nPersons;
-        isEmpty = false;
     }
 
     public Boolean getEmpty() {
         return isEmpty;
     }
 
-    public void setEmpty(Boolean empty) { isEmpty = empty; }
+    public void setEmpty(Boolean empty) {
+        isEmpty = empty;
+    }
+
+    public void clearUp() {
+        this.ticketNo = null;
+        this.isEmpty = true;
+    }
 
     //for debug
     @Override
     public String toString() {
-        return getClass().getSimpleName() + "[tableNo= " + tableNo + ", isEmpty= "+ isEmpty + "]";
+        return getClass().getSimpleName() + "[tableNo= " + tableNo + ", isEmpty= " + isEmpty + ", ticketNo= " + ticketNo + "]";
     }
 
 }

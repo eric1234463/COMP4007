@@ -1,33 +1,32 @@
 package kiosk;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 
 import java.net.*;
-import java.io.*;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-    @FXML private GridPane gridPane;
+    @FXML
     private Scene scene;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
-
     }
-    public void setScene(Scene scene){
+
+    public void setScene(Scene scene) {
         this.scene = scene;
     }
-    public void setSeat(Table table){
+
+    public void setSeat(Table table) {
         ImageView imageView = (ImageView) scene.lookup(table.getTableNo());
         String imageUrl = "";
-        if (table.getEmpty()) {
+        if (!table.getEmpty() && table.getTicketNo() != null) {
             imageUrl = "assets/table_red.png";
         } else {
             switch (table.getnPersons()) {
@@ -54,40 +53,27 @@ public class Controller implements Initializable {
             }
         }
         Image image = new Image(getClass().getResourceAsStream(imageUrl));
-        imageView.setImage(image);
+        Platform.runLater(() -> {
+            imageView.setImage(image);
+        });
+//        imageView.setImage(image);
     }
 
-    public void updateQueue(Queue queue) {
-        Text queueElement = (Text) scene.lookup(queue.getId());
-        String queueCount = Integer.toString(queue.tickets.size());
-        queueElement.setText(queueCount);
+    public void updateQueue(String queueId, int queueSize) {
+        Text queueElement = (Text) scene.lookup(queueId);
+        Platform.runLater(() -> {
+            queueElement.setText(Integer.toString(queueSize));
+        });
+//        queueElement.setText(Integer.toString(queueSize));
     }
 
-    public void updateLastTicketCall(Table table){
-        String index = "";
-        switch (table.getnPersons()) {
-            case 1:
-            case 2:
-                index = "#ticket_0";
-                break;
-            case 3:
-            case 4:
-                index = "#ticket_1";
-                break;
-            case 5:
-            case 6:
-                index = "#ticket_2";
-                break;
-            case 7:
-            case 8:
-                index = "#ticket_3";
-                break;
-            case 9:
-            case 10:
-                index = "#ticket_4";
-        }
+    public void updateLastTicketCall(int queueIndex, String ticketNo) {
+        String index = "#ticket_" + queueIndex;
         Text tableElement = (Text) scene.lookup(index);
-        tableElement.setText("Ticket - "+table.getTicketNo());
+        Platform.runLater(() -> {
+        tableElement.setText("Ticket - " + ticketNo);
+        });
+//        tableElement.setText("Ticket - " + ticketNo);
     }
 
 

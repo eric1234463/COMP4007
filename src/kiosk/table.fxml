@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kiosk.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kiosk.Controller">
    <children>
       <GridPane fx:id="gridPane" layoutX="4.0" prefHeight="762.0" prefWidth="1018.0" style="-fx-border-width: 3px;">
         <columnConstraints>
@@ -251,6 +251,15 @@
                   </ImageView>
                </children>
             </AnchorPane>
+            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #BBBABA;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <ImageView fx:id="table_2_4" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/table_grey.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
             <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #BBBABA;" GridPane.columnIndex="2" GridPane.rowIndex="6">
                <children>
                   <ImageView fx:id="table_2_5" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
@@ -276,57 +285,6 @@
                         <Image url="@assets/table_grey.png" />
                      </image>
                   </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #00fce2;" GridPane.rowIndex="1" GridPane.rowSpan="2">
-               <children>
-                  <Text fill="#00fce2" layoutX="37.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table A" textAlignment="CENTER">
-                     <font>
-                        <Font size="24.0" />
-                     </font></Text>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #4083FF;" GridPane.rowIndex="3" GridPane.rowSpan="2">
-               <children>
-                  <Text fill="#4083ff" layoutX="37.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table B" textAlignment="CENTER">
-                     <font>
-                        <Font size="24.0" />
-                     </font></Text>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #BBBABA;" GridPane.rowIndex="5" GridPane.rowSpan="2">
-               <children>
-                  <Text fill="#bbbaba" layoutX="36.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table C" textAlignment="CENTER">
-                     <font>
-                        <Font size="24.0" />
-                     </font></Text>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #BBBABA;" GridPane.columnIndex="1" GridPane.rowIndex="6">
-               <children>
-                  <ImageView fx:id="table_2_4" fitHeight="60.0" fitWidth="60.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/table_grey.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FC57C8;" GridPane.rowIndex="7" GridPane.rowSpan="2">
-               <children>
-                  <Text fill="#fc57c8" layoutX="36.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table D" textAlignment="CENTER">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FF8139;" GridPane.rowIndex="9" GridPane.rowSpan="2">
-               <children>
-                  <Text fill="#ff8139" layoutX="37.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table E" textAlignment="CENTER">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="320.0" prefWidth="29.0" style="-fx-border-color: #FC57C8;" GridPane.columnIndex="1" GridPane.rowIndex="7">
@@ -365,55 +323,111 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="8" />
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #00fce2;" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.rowSpan="2">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #00fce2;" GridPane.rowIndex="1" GridPane.rowSpan="2">
                <children>
-                  <Text fx:id="queue_0" fill="#00fce2" layoutX="74.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" y="30.0">
+                  <Text fill="#00fce2" layoutX="37.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table A" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #4083FF;" GridPane.rowIndex="3" GridPane.rowSpan="2">
+               <children>
+                  <Text fill="#4083ff" layoutX="37.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table B" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #BBBABA;" GridPane.rowIndex="5" GridPane.rowSpan="2">
+               <children>
+                  <Text fill="#bbbaba" layoutX="36.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table C" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FC57C8;" GridPane.rowIndex="7" GridPane.rowSpan="2">
+               <children>
+                  <Text fill="#fc57c8" layoutX="36.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table D" textAlignment="CENTER">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Text>
-                  <Text fx:id="ticket_0" fill="#00fce2" layoutX="55.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket-0" textAlignment="CENTER" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FF8139;" GridPane.rowIndex="9" GridPane.rowSpan="2">
+               <children>
+                  <Text fill="#ff8139" layoutX="37.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table E" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #00fce2;" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.rowSpan="2">
+               <children>
+                  <Text fx:id="queue_0" fill="#00fce2" layoutX="70.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" y="30.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ticket_0" fill="#00fce2" layoutX="34.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket-10000" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Text>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #4083FF;" GridPane.columnIndex="6" GridPane.rowIndex="3" GridPane.rowSpan="2">
                <children>
-                  <Text fx:id="queue_1" fill="#4083ff" layoutX="73.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" y="30.0">
+                  <Text fx:id="queue_1" fill="#4083ff" layoutX="70.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" y="30.0">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Text>
-                  <Text fx:id="ticket_1" fill="#4083ff" layoutX="56.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket-0" textAlignment="CENTER" />
+                  <Text fx:id="ticket_1" fill="#4083ff" layoutX="39.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket-20000" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Text>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #BBBABA;" GridPane.columnIndex="6" GridPane.rowIndex="5" GridPane.rowSpan="2">
                <children>
-                  <Text fx:id="queue_2" fill="#bbbaba" layoutX="75.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" y="30.0">
+                  <Text fx:id="queue_2" fill="#bbbaba" layoutX="70.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" y="30.0">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Text>
-                  <Text fx:id="ticket_2" fill="#bbbaba" layoutX="52.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket - 0" textAlignment="CENTER" />
+                  <Text fx:id="ticket_2" fill="#bbbaba" layoutX="33.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket-30000" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Text>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FC57C8;" GridPane.columnIndex="6" GridPane.rowIndex="7" GridPane.rowSpan="2">
                <children>
-                  <Text fx:id="queue_3" fill="#fc57c8" layoutX="72.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" y="30.0">
+                  <Text fx:id="queue_3" fill="#fc57c8" layoutX="70.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" y="30.0">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Text>
-                  <Text fx:id="ticket_3" fill="#fc57c8" layoutX="53.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket-0" textAlignment="CENTER" />
+                  <Text fx:id="ticket_3" fill="#fc57c8" layoutX="38.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket-40000" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Text>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FF8139;" GridPane.columnIndex="6" GridPane.rowIndex="9" GridPane.rowSpan="2">
                <children>
-                  <Text fx:id="queue_4" fill="#ff8139" layoutX="74.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" y="30.0">
+                  <Text fx:id="queue_4" fill="#ff8139" layoutX="70.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" y="30.0">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Text>
-                  <Text fx:id="ticket_4" fill="#ff8139" layoutX="55.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket-0" />
+                  <Text fx:id="ticket_4" fill="#ff8139" layoutX="33.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket-50000">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Text>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #FFF;">

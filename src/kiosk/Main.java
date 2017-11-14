@@ -28,16 +28,18 @@ public class Main extends Application {
         this.parentStage.setTitle("Kiosk");
         controller = (Controller) replaceSceneContent("table.fxml");
         controller.setScene(scene);
+
         Listener listener = new Listener(controller);
         Thread x = new Thread(listener);
         x.start();
+
         this.parentStage.show();
 
-        this.customerPanelStage = new Stage();
-        this.customerPanelStage.setTitle("Customer Panel");
-        customerPanelController = replaceCustomerSceneContent("customerPanel.fxml");
-        customerPanelController.setScene(customerPanelScene);
-        this.customerPanelStage.show();
+//        this.customerPanelStage = new Stage();
+//        this.customerPanelStage.setTitle("Customer Panel");
+//        customerPanelController = replaceCustomerSceneContent("customerPanel.fxml");
+//        customerPanelController.setScene(customerPanelScene);
+//        this.customerPanelStage.show();
 
     }
 
