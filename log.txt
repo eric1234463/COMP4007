@@ -1,0 +1,2036 @@
+Nov 16, 2017 1:01:08 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0001 2]
+Nov 16, 2017 1:01:08 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 0
+#queue_2: 0
+#queue_3: 0
+#queue_4: 0
+
+Nov 16, 2017 1:01:08 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0001 2 10001]
+Nov 16, 2017 1:01:08 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10001 #table_0_0 2]
+Nov 16, 2017 1:01:08 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0002 2]
+Nov 16, 2017 1:01:08 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 0
+#queue_2: 0
+#queue_3: 0
+#queue_4: 0
+
+Nov 16, 2017 1:01:08 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0002 2 10002]
+Nov 16, 2017 1:01:09 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10002 #table_0_1 2]
+Nov 16, 2017 1:01:10 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0003 8]
+Nov 16, 2017 1:01:10 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 0
+#queue_2: 0
+#queue_3: 1
+#queue_4: 0
+
+Nov 16, 2017 1:01:10 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0003 8 40001]
+Nov 16, 2017 1:01:10 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 40001 #table_3_0 8]
+Nov 16, 2017 1:01:10 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0004 3]
+Nov 16, 2017 1:01:10 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 1
+#queue_2: 0
+#queue_3: 0
+#queue_4: 0
+
+Nov 16, 2017 1:01:10 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0004 3 20001]
+Nov 16, 2017 1:01:10 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20001 #table_1_0 3]
+Nov 16, 2017 1:01:10 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0005 4]
+Nov 16, 2017 1:01:10 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 1
+#queue_2: 0
+#queue_3: 0
+#queue_4: 0
+
+Nov 16, 2017 1:01:10 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0005 4 20002]
+Nov 16, 2017 1:01:10 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0006 4]
+Nov 16, 2017 1:01:10 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 2
+#queue_2: 0
+#queue_3: 0
+#queue_4: 0
+
+Nov 16, 2017 1:01:10 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0006 4 20003]
+Nov 16, 2017 1:01:11 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20002 #table_1_1 4]
+Nov 16, 2017 1:01:11 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20003 #table_1_2 4]
+Nov 16, 2017 1:01:11 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0007 2]
+Nov 16, 2017 1:01:11 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 0
+#queue_2: 0
+#queue_3: 0
+#queue_4: 0
+
+Nov 16, 2017 1:01:11 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0007 2 10003]
+Nov 16, 2017 1:01:11 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10003 #table_0_2 2]
+Nov 16, 2017 1:01:11 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0008 9]
+Nov 16, 2017 1:01:11 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 0
+#queue_2: 0
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:11 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0008 9 50001]
+Nov 16, 2017 1:01:11 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 50001 #table_4_0 9]
+Nov 16, 2017 1:01:11 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0009 6]
+Nov 16, 2017 1:01:11 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 0
+#queue_2: 1
+#queue_3: 0
+#queue_4: 0
+
+Nov 16, 2017 1:01:11 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0009 6 30001]
+Nov 16, 2017 1:01:12 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30001 #table_2_0 6]
+Nov 16, 2017 1:01:12 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0010 10]
+Nov 16, 2017 1:01:12 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 0
+#queue_2: 0
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:12 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0010 10 50002]
+Nov 16, 2017 1:01:12 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 50002 #table_4_1 10]
+Nov 16, 2017 1:01:12 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0011 9]
+Nov 16, 2017 1:01:12 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 0
+#queue_2: 0
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:12 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0011 9 50003]
+Nov 16, 2017 1:01:12 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0012 2]
+Nov 16, 2017 1:01:12 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 0
+#queue_2: 0
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:12 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0012 2 10004]
+Nov 16, 2017 1:01:12 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10004 #table_0_3 2]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0013 4]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 1
+#queue_2: 0
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:13 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0013 4 20004]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0014 4]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 2
+#queue_2: 0
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:13 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0014 4 20005]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0015 4]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 3
+#queue_2: 0
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:13 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0015 4 20006]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20004 #table_1_3 4]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20005 #table_1_4 4]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20006 #table_1_5 4]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0016 6]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 0
+#queue_2: 1
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:13 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0016 6 30002]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0017 2]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 0
+#queue_2: 1
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:13 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0017 2 10005]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30002 #table_2_1 6]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0018 2]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: #queue_0: 2
+#queue_1: 0
+#queue_2: 0
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:13 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0018 2 10006]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10005 #table_0_4 2]
+Nov 16, 2017 1:01:13 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10006 #table_0_5 2]
+Nov 16, 2017 1:01:14 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0019 4]
+Nov 16, 2017 1:01:14 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 1
+#queue_2: 0
+#queue_3: 0
+#queue_4: 1
+
+Nov 16, 2017 1:01:14 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0019 4 20007]
+Nov 16, 2017 1:01:14 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20007 #table_1_6 4]
+Nov 16, 2017 1:01:14 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0020 9]
+Nov 16, 2017 1:01:14 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 0
+#queue_2: 0
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:14 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0020 9 50004]
+Nov 16, 2017 1:01:14 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0021 6]
+Nov 16, 2017 1:01:14 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 0
+#queue_2: 1
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:14 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0021 6 30003]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0022 4]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 1
+#queue_2: 1
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:15 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0022 4 20008]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20008 #table_1_7 4]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30003 #table_2_2 6]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0023 5]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 0
+#queue_2: 1
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:15 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0023 5 30004]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30004 #table_2_3 5]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0024 4]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 1
+#queue_2: 0
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:15 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0024 4 20009]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0025 5]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 1
+#queue_2: 1
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:15 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0025 5 30005]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0026 2]
+Nov 16, 2017 1:01:15 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 1
+#queue_2: 1
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:15 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0026 2 10007]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30005 #table_2_4 5]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20009 #table_1_8 4]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10007 #table_0_6 2]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0027 3]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 1
+#queue_2: 0
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:16 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0027 3 20010]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0028 6]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 1
+#queue_2: 1
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:16 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0028 6 30006]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0029 4]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 2
+#queue_2: 1
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:16 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0029 4 20011]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0030 5]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 2
+#queue_2: 2
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:16 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0030 5 30007]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0031 8]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 2
+#queue_2: 2
+#queue_3: 1
+#queue_4: 2
+
+Nov 16, 2017 1:01:16 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0031 8 40002]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20010 #table_1_9 3]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30006 #table_2_5 6]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30007 #table_2_6 5]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 40002 #table_3_1 8]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0032 3]
+Nov 16, 2017 1:01:16 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 2
+#queue_2: 0
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:16 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0032 3 20012]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0033 4]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 3
+#queue_2: 0
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:17 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0033 4 20013]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0034 6]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 3
+#queue_2: 1
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:17 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0034 6 30008]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0035 6]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 3
+#queue_2: 2
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:17 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0035 6 30009]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30008 #table_2_7 6]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0036 2]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 3
+#queue_2: 1
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:17 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0036 2 10008]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0037 4]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 4
+#queue_2: 1
+#queue_3: 0
+#queue_4: 2
+
+Nov 16, 2017 1:01:17 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0037 4 20014]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0038 8]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 4
+#queue_2: 1
+#queue_3: 1
+#queue_4: 2
+
+Nov 16, 2017 1:01:17 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0038 8 40003]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10008 #table_0_7 2]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0039 2]
+Nov 16, 2017 1:01:17 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 4
+#queue_2: 1
+#queue_3: 1
+#queue_4: 2
+
+Nov 16, 2017 1:01:17 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0039 2 10009]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10009 #table_0_8 2]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0040 8]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: #queue_0: 0
+#queue_1: 4
+#queue_2: 1
+#queue_3: 2
+#queue_4: 2
+
+Nov 16, 2017 1:01:18 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0040 8 40004]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0041 2]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 4
+#queue_2: 1
+#queue_3: 2
+#queue_4: 2
+
+Nov 16, 2017 1:01:18 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0041 2 10010]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0042 2]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: #queue_0: 2
+#queue_1: 4
+#queue_2: 1
+#queue_3: 2
+#queue_4: 2
+
+Nov 16, 2017 1:01:18 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0042 2 10011]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10010 #table_0_9 2]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0043 8]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 4
+#queue_2: 1
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:18 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0043 8 40005]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0044 6]
+Nov 16, 2017 1:01:18 PM kiosk.Listener mapMsg
+INFO: #queue_0: 1
+#queue_1: 4
+#queue_2: 2
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:18 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0044 6 30010]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0045 2]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: #queue_0: 2
+#queue_1: 4
+#queue_2: 2
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:19 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0045 2 10012]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0046 3]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: #queue_0: 2
+#queue_1: 5
+#queue_2: 2
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:19 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0046 3 20015]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0047 2]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: #queue_0: 3
+#queue_1: 5
+#queue_2: 2
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:19 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0047 2 10013]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0048 2]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: #queue_0: 4
+#queue_1: 5
+#queue_2: 2
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:19 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0048 2 10014]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0049 5]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: #queue_0: 4
+#queue_1: 5
+#queue_2: 3
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:19 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0049 5 30011]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0050 5]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: #queue_0: 4
+#queue_1: 5
+#queue_2: 4
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:19 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0050 5 30012]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0051 2]
+Nov 16, 2017 1:01:19 PM kiosk.Listener mapMsg
+INFO: #queue_0: 5
+#queue_1: 5
+#queue_2: 4
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:19 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0051 2 10015]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0052 2]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: #queue_0: 6
+#queue_1: 5
+#queue_2: 4
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:20 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0052 2 10016]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0053 5]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: #queue_0: 6
+#queue_1: 5
+#queue_2: 5
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:20 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0053 5 30013]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0054 2]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: #queue_0: 7
+#queue_1: 5
+#queue_2: 5
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:20 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0054 2 10017]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_2 652]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20011 #table_1_2 4]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0055 9]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: #queue_0: 7
+#queue_1: 4
+#queue_2: 5
+#queue_3: 3
+#queue_4: 3
+
+Nov 16, 2017 1:01:20 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0055 9 50005]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0056 6]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: #queue_0: 7
+#queue_1: 4
+#queue_2: 6
+#queue_3: 3
+#queue_4: 3
+
+Nov 16, 2017 1:01:20 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0056 6 30014]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0057 2]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: #queue_0: 8
+#queue_1: 4
+#queue_2: 6
+#queue_3: 3
+#queue_4: 3
+
+Nov 16, 2017 1:01:20 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0057 2 10018]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0058 2]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 4
+#queue_2: 6
+#queue_3: 3
+#queue_4: 3
+
+Nov 16, 2017 1:01:20 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0058 2 10019]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0059 4]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 5
+#queue_2: 6
+#queue_3: 3
+#queue_4: 3
+
+Nov 16, 2017 1:01:20 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0059 4 20016]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0060 4]
+Nov 16, 2017 1:01:20 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 6
+#queue_2: 6
+#queue_3: 3
+#queue_4: 3
+
+Nov 16, 2017 1:01:20 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0060 4 20017]
+Nov 16, 2017 1:01:21 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0061 2]
+Nov 16, 2017 1:01:21 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 6
+#queue_2: 6
+#queue_3: 3
+#queue_4: 3
+
+Nov 16, 2017 1:01:21 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0061 2 10020]
+Nov 16, 2017 1:01:21 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0062 6]
+Nov 16, 2017 1:01:21 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 6
+#queue_2: 7
+#queue_3: 3
+#queue_4: 3
+
+Nov 16, 2017 1:01:21 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0062 6 30015]
+Nov 16, 2017 1:01:21 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0063 8]
+Nov 16, 2017 1:01:21 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 6
+#queue_2: 7
+#queue_3: 4
+#queue_4: 3
+
+Nov 16, 2017 1:01:21 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0063 8 40006]
+Nov 16, 2017 1:01:21 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0064 3]
+Nov 16, 2017 1:01:21 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 7
+#queue_2: 7
+#queue_3: 4
+#queue_4: 3
+
+Nov 16, 2017 1:01:21 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0064 3 20018]
+Nov 16, 2017 1:01:22 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0065 8]
+Nov 16, 2017 1:01:22 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 7
+#queue_2: 7
+#queue_3: 5
+#queue_4: 3
+
+Nov 16, 2017 1:01:22 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0065 8 40007]
+Nov 16, 2017 1:01:22 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0066 3]
+Nov 16, 2017 1:01:22 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 8
+#queue_2: 7
+#queue_3: 5
+#queue_4: 3
+
+Nov 16, 2017 1:01:22 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0066 3 20019]
+Nov 16, 2017 1:01:22 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0067 3]
+Nov 16, 2017 1:01:22 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 9
+#queue_2: 7
+#queue_3: 5
+#queue_4: 3
+
+Nov 16, 2017 1:01:22 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0067 3 20020]
+Nov 16, 2017 1:01:22 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0068 6]
+Nov 16, 2017 1:01:22 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 9
+#queue_2: 8
+#queue_3: 5
+#queue_4: 3
+
+Nov 16, 2017 1:01:22 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0068 6 30016]
+Nov 16, 2017 1:01:22 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0069 2]
+Nov 16, 2017 1:01:22 PM kiosk.Listener mapMsg
+INFO: #queue_0: 11
+#queue_1: 9
+#queue_2: 8
+#queue_3: 5
+#queue_4: 3
+
+Nov 16, 2017 1:01:22 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0069 2 10021]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0070 2]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 9
+#queue_2: 8
+#queue_3: 5
+#queue_4: 3
+
+Nov 16, 2017 1:01:23 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0070 2 10022]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0071 4]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 10
+#queue_2: 8
+#queue_3: 5
+#queue_4: 3
+
+Nov 16, 2017 1:01:23 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0071 4 20021]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0072 4]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 11
+#queue_2: 8
+#queue_3: 5
+#queue_4: 3
+
+Nov 16, 2017 1:01:23 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0072 4 20022]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0073 4]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 12
+#queue_2: 8
+#queue_3: 5
+#queue_4: 3
+
+Nov 16, 2017 1:01:23 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0073 4 20023]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0074 8]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 12
+#queue_2: 8
+#queue_3: 6
+#queue_4: 3
+
+Nov 16, 2017 1:01:23 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0074 8 40008]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0075 5]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 12
+#queue_2: 9
+#queue_3: 6
+#queue_4: 3
+
+Nov 16, 2017 1:01:23 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0075 5 30017]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0076 2]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 12
+#queue_2: 9
+#queue_3: 6
+#queue_4: 3
+
+Nov 16, 2017 1:01:23 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0076 2 10023]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0077 6]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 12
+#queue_2: 10
+#queue_3: 6
+#queue_4: 3
+
+Nov 16, 2017 1:01:23 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0077 6 30018]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_4 800]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0078 5]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 12
+#queue_2: 11
+#queue_3: 6
+#queue_4: 3
+
+Nov 16, 2017 1:01:23 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0078 5 30019]
+Nov 16, 2017 1:01:23 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20012 #table_1_4 3]
+Nov 16, 2017 1:01:24 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_2_0 1290]
+Nov 16, 2017 1:01:24 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30009 #table_2_0 6]
+Nov 16, 2017 1:01:24 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0079 10]
+Nov 16, 2017 1:01:24 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 11
+#queue_2: 10
+#queue_3: 6
+#queue_4: 4
+
+Nov 16, 2017 1:01:24 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0079 10 50006]
+Nov 16, 2017 1:01:24 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0080 6]
+Nov 16, 2017 1:01:24 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 11
+#queue_2: 11
+#queue_3: 6
+#queue_4: 4
+
+Nov 16, 2017 1:01:24 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0080 6 30020]
+Nov 16, 2017 1:01:24 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0081 2]
+Nov 16, 2017 1:01:24 PM kiosk.Listener mapMsg
+INFO: #queue_0: 14
+#queue_1: 11
+#queue_2: 11
+#queue_3: 6
+#queue_4: 4
+
+Nov 16, 2017 1:01:24 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0081 2 10024]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_8 640]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0082 6]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: #queue_0: 14
+#queue_1: 10
+#queue_2: 12
+#queue_3: 6
+#queue_4: 4
+
+Nov 16, 2017 1:01:25 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0082 6 30021]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0083 6]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: #queue_0: 14
+#queue_1: 10
+#queue_2: 13
+#queue_3: 6
+#queue_4: 4
+
+Nov 16, 2017 1:01:25 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0083 6 30022]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0084 5]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: #queue_0: 14
+#queue_1: 10
+#queue_2: 14
+#queue_3: 6
+#queue_4: 4
+
+Nov 16, 2017 1:01:25 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0084 5 30023]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_4_1 720]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20015 #table_1_8 3]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0085 5]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: #queue_0: 14
+#queue_1: 8
+#queue_2: 15
+#queue_3: 6
+#queue_4: 3
+
+Nov 16, 2017 1:01:25 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0085 5 30024]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0086 8]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: #queue_0: 14
+#queue_1: 8
+#queue_2: 15
+#queue_3: 7
+#queue_4: 3
+
+Nov 16, 2017 1:01:25 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0086 8 40009]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0087 2]
+Nov 16, 2017 1:01:25 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 8
+#queue_2: 15
+#queue_3: 7
+#queue_4: 3
+
+Nov 16, 2017 1:01:25 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0087 2 10025]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0088 5]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 8
+#queue_2: 16
+#queue_3: 7
+#queue_4: 2
+
+Nov 16, 2017 1:01:26 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0088 5 30025]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_3 976]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_3_0 1832]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0089 5]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 8
+#queue_2: 17
+#queue_3: 7
+#queue_4: 2
+
+Nov 16, 2017 1:01:26 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0089 5 30026]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_2_1 1524]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20016 #table_1_3 4]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30010 #table_2_1 6]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 50005 #table_4_1 9]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0090 3]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 8
+#queue_2: 16
+#queue_3: 6
+#queue_4: 1
+
+Nov 16, 2017 1:01:26 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0090 3 20024]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0091 2]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: #queue_0: 16
+#queue_1: 8
+#queue_2: 16
+#queue_3: 5
+#queue_4: 1
+
+Nov 16, 2017 1:01:26 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0091 2 10026]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0092 2]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: #queue_0: 17
+#queue_1: 8
+#queue_2: 16
+#queue_3: 5
+#queue_4: 1
+
+Nov 16, 2017 1:01:26 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0092 2 10027]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0093 8]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: #queue_0: 17
+#queue_1: 8
+#queue_2: 16
+#queue_3: 6
+#queue_4: 1
+
+Nov 16, 2017 1:01:26 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0093 8 40010]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0094 4]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: #queue_0: 17
+#queue_1: 9
+#queue_2: 16
+#queue_3: 6
+#queue_4: 1
+
+Nov 16, 2017 1:01:26 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0094 4 20025]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0095 2]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: #queue_0: 18
+#queue_1: 9
+#queue_2: 16
+#queue_3: 6
+#queue_4: 1
+
+Nov 16, 2017 1:01:26 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0095 2 10028]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0096 2]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: #queue_0: 19
+#queue_1: 9
+#queue_2: 16
+#queue_3: 5
+#queue_4: 1
+
+Nov 16, 2017 1:01:26 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0096 2 10029]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0097 5]
+Nov 16, 2017 1:01:26 PM kiosk.Listener mapMsg
+INFO: #queue_0: 19
+#queue_1: 9
+#queue_2: 17
+#queue_3: 5
+#queue_4: 1
+
+Nov 16, 2017 1:01:26 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0097 5 30027]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 40006 #table_3_0 8]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_2_7 900]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_3 420]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0098 3]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: #queue_0: 18
+#queue_1: 10
+#queue_2: 16
+#queue_3: 4
+#queue_4: 1
+
+Nov 16, 2017 1:01:27 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0098 3 20026]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0099 2]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: #queue_0: 19
+#queue_1: 10
+#queue_2: 16
+#queue_3: 4
+#queue_4: 1
+
+Nov 16, 2017 1:01:27 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0099 2 10030]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30012 #table_2_7 5]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0100 4]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: #queue_0: 18
+#queue_1: 11
+#queue_2: 15
+#queue_3: 4
+#queue_4: 1
+
+Nov 16, 2017 1:01:27 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0100 4 20027]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_2 252]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0101 4]
+Nov 16, 2017 1:01:27 PM kiosk.Listener mapMsg
+INFO: #queue_0: 16
+#queue_1: 12
+#queue_2: 15
+#queue_3: 4
+#queue_4: 1
+
+Nov 16, 2017 1:01:27 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0101 4 20028]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10016 #table_0_3 2]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_0 594]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_1 912]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20017 #table_1_0 4]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20018 #table_1_1 3]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10018 #table_0_2 2]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0102 6]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 10
+#queue_2: 16
+#queue_3: 4
+#queue_4: 1
+
+Nov 16, 2017 1:01:28 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0102 6 30028]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0103 2]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 10
+#queue_2: 16
+#queue_3: 4
+#queue_4: 1
+
+Nov 16, 2017 1:01:28 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0103 2 10031]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0104 6]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 10
+#queue_2: 17
+#queue_3: 4
+#queue_4: 1
+
+Nov 16, 2017 1:01:28 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0104 6 30029]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0105 8]
+Nov 16, 2017 1:01:28 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 10
+#queue_2: 17
+#queue_3: 5
+#queue_4: 1
+
+Nov 16, 2017 1:01:28 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0105 8 40011]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0106 6]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 10
+#queue_2: 18
+#queue_3: 5
+#queue_4: 1
+
+Nov 16, 2017 1:01:29 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0106 6 30030]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_2_5 1098]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_4 486]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0107 9]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 10
+#queue_2: 18
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:29 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0107 9 50007]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_0 316]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0108 6]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: #queue_0: 11
+#queue_1: 10
+#queue_2: 18
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:29 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0108 6 30031]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_1 558]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0109 4]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: #queue_0: 11
+#queue_1: 11
+#queue_2: 18
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:29 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0109 4 20029]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10021 #table_0_0 2]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10023 #table_0_4 2]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0110 2]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 11
+#queue_2: 17
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:29 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0110 2 10032]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0111 4]
+Nov 16, 2017 1:01:29 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 12
+#queue_2: 17
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:29 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0111 4 20030]
+Nov 16, 2017 1:01:30 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0112 2]
+Nov 16, 2017 1:01:30 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 12
+#queue_2: 17
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:30 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0112 2 10033]
+Nov 16, 2017 1:01:30 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10024 #table_0_1 2]
+Nov 16, 2017 1:01:30 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30016 #table_2_5 6]
+Nov 16, 2017 1:01:30 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0113 2]
+Nov 16, 2017 1:01:30 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 12
+#queue_2: 15
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:30 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0113 2 10034]
+Nov 16, 2017 1:01:30 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_2_6 1100]
+Nov 16, 2017 1:01:30 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0114 2]
+Nov 16, 2017 1:01:30 PM kiosk.Listener mapMsg
+INFO: #queue_0: 11
+#queue_1: 12
+#queue_2: 14
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:30 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0114 2 10035]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30018 #table_2_6 6]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0115 2]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 12
+#queue_2: 13
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:31 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0115 2 10036]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0116 8]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 12
+#queue_2: 13
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:31 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0116 8 40012]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0117 2]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 12
+#queue_2: 13
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:31 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0117 2 10037]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_9 600]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0118 3]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 13
+#queue_2: 13
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:31 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0118 3 20031]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0119 5]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 12
+#queue_2: 14
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:31 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0119 5 30032]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0120 2]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: #queue_0: 14
+#queue_1: 12
+#queue_2: 14
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:31 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0120 2 10038]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0121 2]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 12
+#queue_2: 14
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:31 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0121 2 10039]
+Nov 16, 2017 1:01:31 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_2_2 1284]
+Nov 16, 2017 1:01:32 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_6 260]
+Nov 16, 2017 1:01:32 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10025 #table_0_6 2]
+Nov 16, 2017 1:01:32 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0122 2]
+Nov 16, 2017 1:01:32 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 10
+#queue_2: 12
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:32 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0122 2 10040]
+Nov 16, 2017 1:01:32 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_5 736]
+Nov 16, 2017 1:01:32 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20024 #table_1_9 3]
+Nov 16, 2017 1:01:32 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30022 #table_2_2 6]
+Nov 16, 2017 1:01:32 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0123 2]
+Nov 16, 2017 1:01:32 PM kiosk.Listener mapMsg
+INFO: #queue_0: 16
+#queue_1: 7
+#queue_2: 10
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:32 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0123 2 10041]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20025 #table_1_5 4]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0124 8]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: #queue_0: 16
+#queue_1: 6
+#queue_2: 10
+#queue_3: 7
+#queue_4: 2
+
+Nov 16, 2017 1:01:33 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0124 8 40013]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_7 588]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_5 320]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20026 #table_1_7 3]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10026 #table_0_5 2]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0125 8]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 5
+#queue_2: 10
+#queue_3: 8
+#queue_4: 2
+
+Nov 16, 2017 1:01:33 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0125 8 40014]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0126 8]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 5
+#queue_2: 10
+#queue_3: 9
+#queue_4: 2
+
+Nov 16, 2017 1:01:33 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0126 8 40015]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0127 3]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 6
+#queue_2: 10
+#queue_3: 9
+#queue_4: 2
+
+Nov 16, 2017 1:01:33 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0127 3 20032]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_4_0 1449]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0128 3]
+Nov 16, 2017 1:01:33 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 7
+#queue_2: 10
+#queue_3: 9
+#queue_4: 2
+
+Nov 16, 2017 1:01:33 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0128 3 20033]
+Nov 16, 2017 1:01:34 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 50007 #table_4_0 9]
+Nov 16, 2017 1:01:34 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0129 10]
+Nov 16, 2017 1:01:34 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 7
+#queue_2: 10
+#queue_3: 9
+#queue_4: 1
+
+Nov 16, 2017 1:01:34 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0129 10 50008]
+Nov 16, 2017 1:01:34 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0130 2]
+Nov 16, 2017 1:01:34 PM kiosk.Listener mapMsg
+INFO: #queue_0: 16
+#queue_1: 7
+#queue_2: 10
+#queue_3: 9
+#queue_4: 1
+
+Nov 16, 2017 1:01:34 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0130 2 10042]
+Nov 16, 2017 1:01:34 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0131 5]
+Nov 16, 2017 1:01:34 PM kiosk.Listener mapMsg
+INFO: #queue_0: 16
+#queue_1: 7
+#queue_2: 11
+#queue_3: 9
+#queue_4: 1
+
+Nov 16, 2017 1:01:34 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0131 5 30033]
+Nov 16, 2017 1:01:34 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0132 8]
+Nov 16, 2017 1:01:34 PM kiosk.Listener mapMsg
+INFO: #queue_0: 16
+#queue_1: 7
+#queue_2: 11
+#queue_3: 10
+#queue_4: 1
+
+Nov 16, 2017 1:01:34 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0132 8 40016]
+Nov 16, 2017 1:01:35 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0133 2]
+Nov 16, 2017 1:01:35 PM kiosk.Listener mapMsg
+INFO: #queue_0: 17
+#queue_1: 7
+#queue_2: 11
+#queue_3: 10
+#queue_4: 1
+
+Nov 16, 2017 1:01:35 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0133 2 10043]
+Nov 16, 2017 1:01:35 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0134 2]
+Nov 16, 2017 1:01:35 PM kiosk.Listener mapMsg
+INFO: #queue_0: 18
+#queue_1: 7
+#queue_2: 11
+#queue_3: 10
+#queue_4: 1
+
+Nov 16, 2017 1:01:35 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0134 2 10044]
+Nov 16, 2017 1:01:35 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0135 9]
+Nov 16, 2017 1:01:35 PM kiosk.Listener mapMsg
+INFO: #queue_0: 18
+#queue_1: 7
+#queue_2: 11
+#queue_3: 10
+#queue_4: 2
+
+Nov 16, 2017 1:01:35 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0135 9 50009]
+Nov 16, 2017 1:01:35 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_3_1 1344]
+Nov 16, 2017 1:01:35 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0136 6]
+Nov 16, 2017 1:01:35 PM kiosk.Listener mapMsg
+INFO: #queue_0: 18
+#queue_1: 7
+#queue_2: 12
+#queue_3: 9
+#queue_4: 2
+
+Nov 16, 2017 1:01:35 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0136 6 30034]
+Nov 16, 2017 1:01:36 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0137 6]
+Nov 16, 2017 1:01:36 PM kiosk.Listener mapMsg
+INFO: #queue_0: 18
+#queue_1: 7
+#queue_2: 13
+#queue_3: 7
+#queue_4: 2
+
+Nov 16, 2017 1:01:36 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0137 6 30035]
+Nov 16, 2017 1:01:36 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0138 5]
+Nov 16, 2017 1:01:36 PM kiosk.Listener mapMsg
+INFO: #queue_0: 18
+#queue_1: 7
+#queue_2: 14
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:36 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0138 5 30036]
+Nov 16, 2017 1:01:36 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_9 384]
+Nov 16, 2017 1:01:36 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0139 3]
+Nov 16, 2017 1:01:36 PM kiosk.Listener mapMsg
+INFO: #queue_0: 17
+#queue_1: 8
+#queue_2: 14
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:36 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0139 3 20034]
+Nov 16, 2017 1:01:36 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 40012 #table_3_1 8]
+Nov 16, 2017 1:01:37 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0140 6]
+Nov 16, 2017 1:01:37 PM kiosk.Listener mapMsg
+INFO: #queue_0: 15
+#queue_1: 8
+#queue_2: 15
+#queue_3: 4
+#queue_4: 2
+
+Nov 16, 2017 1:01:37 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0140 6 30037]
+Nov 16, 2017 1:01:37 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0141 3]
+Nov 16, 2017 1:01:37 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 9
+#queue_2: 15
+#queue_3: 4
+#queue_4: 2
+
+Nov 16, 2017 1:01:37 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0141 3 20035]
+Nov 16, 2017 1:01:37 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0142 4]
+Nov 16, 2017 1:01:37 PM kiosk.Listener mapMsg
+INFO: #queue_0: 13
+#queue_1: 10
+#queue_2: 15
+#queue_3: 4
+#queue_4: 2
+
+Nov 16, 2017 1:01:37 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0142 4 20036]
+Nov 16, 2017 1:01:37 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0143 2]
+Nov 16, 2017 1:01:37 PM kiosk.Listener mapMsg
+INFO: #queue_0: 14
+#queue_1: 10
+#queue_2: 15
+#queue_3: 4
+#queue_4: 2
+
+Nov 16, 2017 1:01:37 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0143 2 10045]
+Nov 16, 2017 1:01:37 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_7 302]
+Nov 16, 2017 1:01:38 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0144 3]
+Nov 16, 2017 1:01:38 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 11
+#queue_2: 15
+#queue_3: 4
+#queue_4: 2
+
+Nov 16, 2017 1:01:38 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0144 3 20037]
+Nov 16, 2017 1:01:38 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10034 #table_0_7 2]
+Nov 16, 2017 1:01:38 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0145 4]
+Nov 16, 2017 1:01:38 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 12
+#queue_2: 15
+#queue_3: 4
+#queue_4: 2
+
+Nov 16, 2017 1:01:38 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0145 4 20038]
+Nov 16, 2017 1:01:38 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10036 #table_0_9 2]
+Nov 16, 2017 1:01:38 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0146 8]
+Nov 16, 2017 1:01:38 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 12
+#queue_2: 15
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:38 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0146 8 40017]
+Nov 16, 2017 1:01:38 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_2_4 750]
+Nov 16, 2017 1:01:38 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_6 1000]
+Nov 16, 2017 1:01:39 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_8 446]
+Nov 16, 2017 1:01:39 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0147 4]
+Nov 16, 2017 1:01:39 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 11
+#queue_2: 12
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:39 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0147 4 20039]
+Nov 16, 2017 1:01:39 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 10037 #table_0_8 2]
+Nov 16, 2017 1:01:39 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0148 4]
+Nov 16, 2017 1:01:39 PM kiosk.Listener mapMsg
+INFO: #queue_0: 8
+#queue_1: 10
+#queue_2: 10
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:39 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0148 4 20040]
+Nov 16, 2017 1:01:39 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0149 6]
+Nov 16, 2017 1:01:39 PM kiosk.Listener mapMsg
+INFO: #queue_0: 8
+#queue_1: 10
+#queue_2: 11
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:39 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0149 6 30038]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0150 2]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 9
+#queue_2: 10
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:40 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0150 2 10046]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20032 #table_1_6 3]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0151 4]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 9
+#queue_2: 9
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:40 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0151 4 20041]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0152 3]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 10
+#queue_2: 9
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:40 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0152 3 20042]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0153 5]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 10
+#queue_2: 9
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:40 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0153 5 30039]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0154 5]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 10
+#queue_2: 10
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:40 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0154 5 30040]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0155 8]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: #queue_0: 9
+#queue_1: 10
+#queue_2: 10
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:40 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0155 8 40018]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_3 1172]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20033 #table_1_3 3]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_1_1 318]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 20034 #table_1_1 3]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0156 2]
+Nov 16, 2017 1:01:40 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 8
+#queue_2: 8
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:40 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0156 2 10047]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0157 6]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: #queue_0: 10
+#queue_1: 8
+#queue_2: 9
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:41 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0157 6 30041]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30033 #table_2_4 5]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0158 2]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: #queue_0: 11
+#queue_1: 8
+#queue_2: 8
+#queue_3: 6
+#queue_4: 2
+
+Nov 16, 2017 1:01:41 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0158 2 10048]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_2_3 780]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30034 #table_2_3 6]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_3_0 1976]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0159 5]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: #queue_0: 11
+#queue_1: 8
+#queue_2: 8
+#queue_3: 5
+#queue_4: 2
+
+Nov 16, 2017 1:01:41 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0159 5 30042]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_2_0 1338]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 30035 #table_2_0 6]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0160 2]
+Nov 16, 2017 1:01:41 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 8
+#queue_2: 7
+#queue_3: 4
+#queue_4: 2
+
+Nov 16, 2017 1:01:41 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0160 2 10049]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0161 4]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 9
+#queue_2: 7
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:42 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0161 4 20043]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0162 3]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 10
+#queue_2: 7
+#queue_3: 3
+#queue_4: 2
+
+Nov 16, 2017 1:01:42 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0162 3 20044]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketAck: 40016 #table_3_0 8]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0163 3]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 11
+#queue_2: 7
+#queue_3: 2
+#queue_4: 2
+
+Nov 16, 2017 1:01:42 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0163 3 20045]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0164 9]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 11
+#queue_2: 7
+#queue_3: 2
+#queue_4: 3
+
+Nov 16, 2017 1:01:42 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0164 9 50010]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [CheckOut: #table_0_6 360]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0165 4]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: #queue_0: 12
+#queue_1: 12
+#queue_2: 7
+#queue_3: 2
+#queue_4: 3
+
+Nov 16, 2017 1:01:42 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0165 4 20046]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: New msg: NetIn: [TicketReq: Client-0166 5]
+Nov 16, 2017 1:01:42 PM kiosk.Listener mapMsg
+INFO: #queue_0: 11
+#queue_1: 12
+#queue_2: 8
+#queue_3: 2
+#queue_4: 3
+
+Nov 16, 2017 1:01:42 PM kiosk.Listener ticketRep
+FINER: NetOut: [TicketRep: Client-0166 5 30043]

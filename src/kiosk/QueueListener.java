@@ -1,6 +1,7 @@
 package kiosk;
 
 import java.util.Iterator;
+import java.util.logging.Level;
 
 public class QueueListener implements Runnable {
     //public ArrayList<Queue> queue = new ArrayList<Queue>();
@@ -59,4 +60,7 @@ public class QueueListener implements Runnable {
         }
     }
 
+    public Queue getQueue() {
+        return queue;
+    }
 }

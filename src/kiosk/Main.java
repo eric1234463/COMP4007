@@ -10,6 +10,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.InputStream;
+import java.util.logging.Level;
 
 public class Main extends Application {
     private Stage parentStage;
@@ -26,6 +27,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         //Logging init
         Log.initLog("log.txt");
+        Log.logger.setLevel(Level.FINER);
 
         this.parentStage = primaryStage;
         this.parentStage.setTitle("Kiosk");

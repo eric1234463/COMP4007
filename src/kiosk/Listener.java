@@ -1,10 +1,12 @@
 package kiosk;
 
-import java.io.*;
-import java.lang.reflect.Array;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Timer;
+import java.util.logging.Level;
 
 public class Listener implements Runnable {
     private static final int LISTEN_PORT = 54321;
@@ -52,6 +54,7 @@ public class Listener implements Runnable {
     }
 
     public void mapMsg(String message) {
+        Log.logger.log(Level.INFO, "New msg: NetIn: [" + message + "]");
         String[] Msg = message.split(" ");
         String action = Msg[0];
         Ticket ticket;
@@ -62,6 +65,11 @@ public class Listener implements Runnable {
                 ticket = new Ticket(message, String.valueOf(ticketNo));
                 int index = ticketNo / 10000;
                 if (this.queueListeners[index - 1].addTicketToQueue(ticket)) {
+                    Log.logger.log(Level.INFO, "\n"+this.queueListeners[0].getQueue().getId()+": "+ this.queueListeners[0].getQueue().tickets.size()+"\n"+
+                            this.queueListeners[1].getQueue().getId()+": "+ this.queueListeners[1].getQueue().tickets.size()+"\n"+
+                            this.queueListeners[2].getQueue().getId()+": "+ this.queueListeners[2].getQueue().tickets.size()+"\n"+
+                            this.queueListeners[3].getQueue().getId()+": "+ this.queueListeners[3].getQueue().tickets.size()+"\n"+
+                            this.queueListeners[4].getQueue().getId()+": "+ this.queueListeners[4].getQueue().tickets.size()+"\n");
                     this.ticketRep(ticket);
                 } else {
                     this.queueTooLong(ticket);
@@ -113,6 +121,7 @@ public class Listener implements Runnable {
         String clientId = ticket.getClientId();
         int nPersons = ticket.getnPersons();
         String ticketNo = ticket.getTicketNo();
+        Log.logger.log(Level.FINER, "NetOut: [TicketRep: " + clientId + " " + nPersons + " " + ticketNo + "]");
         //System.out.println("TicketRep: " + clientId + " " + nPersons + " " + ticketNo + "");
         printWriter.println("TicketRep: " + clientId + " " + nPersons + " " + ticketNo + "");
         printWriter.flush();
