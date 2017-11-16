@@ -24,6 +24,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        //Logging init
+        Log.initLog("log.txt");
+
         this.parentStage = primaryStage;
         this.parentStage.setTitle("Kiosk");
         controller = (Controller) replaceSceneContent("table.fxml");
