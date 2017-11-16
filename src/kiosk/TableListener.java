@@ -1,6 +1,7 @@
 package kiosk;
 
 import java.util.ArrayList;
+import java.util.logging.Level;
 
 public class TableListener {
     public ArrayList<ArrayList<Table>> tables = new ArrayList<ArrayList<Table>>();
@@ -47,6 +48,20 @@ public class TableListener {
         table = this.tables.get(row).get(col);
         table.setEmpty(false);
         this.listener.controller.setSeat(table);
+
+        //Logger: log all table status
+        StringBuilder logOutput=new StringBuilder();
+        for (int i = 0; i < tables.size(); i++) {
+            logOutput.append("Tables["+i+"]:\n");
+            for (int j = 0; j < tables.get(i).size(); j++) {
+                if(tables.get(i).get(j).getEmpty()){
+                    logOutput.append("[......]\n");
+                }else{
+                    logOutput.append("["+tables.get(i).get(j).getTicketNo()+"]\n");
+                }
+            }
+        }
+        Log.logger.log(Level.INFO, logOutput.toString());
     }
 
     public void checkOut(String tableNo) {
