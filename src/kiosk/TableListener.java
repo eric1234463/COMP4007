@@ -72,6 +72,7 @@ public class TableListener {
         table.clearUp();
         this.listener.controller.setSeat(table);
         System.out.println("checkout" + table);
+
     }
 
 }

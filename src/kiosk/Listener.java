@@ -24,10 +24,14 @@ public class Listener implements Runnable {
         try {
             ServerSocket serverSocket = new ServerSocket(LISTEN_PORT);
             System.out.println("Server start...");
+            Log.logger.log(Level.FINE, "Registering Server");
 
             Socket socket = serverSocket.accept();
+            Log.logger.log(Level.FINE, "Server Created");
+
             bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             printWriter = new PrintWriter(socket.getOutputStream());
+            Log.logger.log(Level.FINE, "Server Started");
 
             System.out.println("\tWAIT Client Msg ...");
         } catch (Exception ex) {
@@ -65,11 +69,11 @@ public class Listener implements Runnable {
                 ticket = new Ticket(message, String.valueOf(ticketNo));
                 int index = ticketNo / 10000;
                 if (this.queueListeners[index - 1].addTicketToQueue(ticket)) {
-                    Log.logger.log(Level.INFO, "\n"+this.queueListeners[0].getQueue().getId()+": "+ this.queueListeners[0].getQueue().tickets.size()+"\n"+
-                            this.queueListeners[1].getQueue().getId()+": "+ this.queueListeners[1].getQueue().tickets.size()+"\n"+
-                            this.queueListeners[2].getQueue().getId()+": "+ this.queueListeners[2].getQueue().tickets.size()+"\n"+
-                            this.queueListeners[3].getQueue().getId()+": "+ this.queueListeners[3].getQueue().tickets.size()+"\n"+
-                            this.queueListeners[4].getQueue().getId()+": "+ this.queueListeners[4].getQueue().tickets.size()+"\n");
+                    Log.logger.log(Level.INFO, "\n" + this.queueListeners[0].getQueue().getId() + ": " + this.queueListeners[0].getQueue().tickets.size() + "\n" +
+                            this.queueListeners[1].getQueue().getId() + ": " + this.queueListeners[1].getQueue().tickets.size() + "\n" +
+                            this.queueListeners[2].getQueue().getId() + ": " + this.queueListeners[2].getQueue().tickets.size() + "\n" +
+                            this.queueListeners[3].getQueue().getId() + ": " + this.queueListeners[3].getQueue().tickets.size() + "\n" +
+                            this.queueListeners[4].getQueue().getId() + ": " + this.queueListeners[4].getQueue().tickets.size() + "\n");
                     this.ticketRep(ticket);
                 } else {
                     this.queueTooLong(ticket);
@@ -130,12 +134,14 @@ public class Listener implements Runnable {
     public void ticketCall(String ticketNo, String tableNo) {
         System.out.println("TicketCall: " + ticketNo + " " + tableNo + "");
         printWriter.println("TicketCall: " + ticketNo + " " + tableNo + "");
+        Log.logger.log(Level.FINER, "NetOut: [TicketCall: " + ticketNo + " " + tableNo +"]");
         printWriter.flush();
     }
 
     public void tableAssign(String ticketNo, String tableNo) {
         //System.out.println("get ACK and do TableAssign: " + ticketNo + " " + tableNo + "");
         printWriter.println("TableAssign: " + ticketNo + " " + tableNo + "");
+
         printWriter.flush();
     }
 
@@ -144,6 +150,8 @@ public class Listener implements Runnable {
         Integer nPerson = ticket.getnPersons();
         System.out.println("QueueTooLong: " + clientId + " " + nPerson + "");
         printWriter.println("QueueTooLong: " + clientId + " " + nPerson + "");
+        Log.logger.log(Level.FINER, "NetOut: [QueueTooLong: " + clientId + " " + nPerson +"]");
+
         printWriter.flush();
 
     }
