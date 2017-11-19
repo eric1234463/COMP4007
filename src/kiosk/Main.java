@@ -18,7 +18,7 @@ public class Main extends Application {
     private FXMLLoader loader;
     private Scene scene;
 
-
+    
     @Override
     public void start(Stage primaryStage) throws Exception{
         //Logging init
