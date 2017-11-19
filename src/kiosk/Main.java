@@ -18,10 +18,6 @@ public class Main extends Application {
     private FXMLLoader loader;
     private Scene scene;
 
-    private Stage customerPanelStage;
-    private CustomerPanelController customerPanelController;
-    private FXMLLoader customerPanelLoader;
-    private Scene customerPanelScene;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -70,22 +66,5 @@ public class Main extends Application {
         return (Initializable) loader.getController();
     }
 
-    private CustomerPanelController replaceCustomerSceneContent(String fxml) throws Exception {
-        this.customerPanelLoader = new FXMLLoader();
-        InputStream in = Main.class.getResourceAsStream(fxml);
-        this.customerPanelLoader.setBuilderFactory(new JavaFXBuilderFactory());
-        this.customerPanelLoader.setLocation(Main.class.getResource(fxml));
-        AnchorPane page;
-        try {
-            page = (AnchorPane) customerPanelLoader.load(in);
-        } finally {
-            in.close();
-        }
-        customerPanelScene = new Scene(page);
-        this.customerPanelStage.setScene(customerPanelScene);
-        this.customerPanelStage.sizeToScene();
-
-        return customerPanelLoader.getController();
-    }
 
 }
