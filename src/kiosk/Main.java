@@ -17,11 +17,7 @@ public class Main extends Application {
     private Controller controller;
     private FXMLLoader loader;
     private Scene scene;
-
-    private Stage customerPanelStage;
-    private CustomerPanelController customerPanelController;
-    private FXMLLoader customerPanelLoader;
-    private Scene customerPanelScene;
+    
 
     @Override
     public void start(Stage primaryStage) throws Exception{
