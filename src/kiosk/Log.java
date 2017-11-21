@@ -10,6 +10,11 @@ public class Log {
     public static Logger logger;
     private static FileHandler fileHandler;
 
+    /**
+     * initialize the logger, create log file if not exist.
+     * @param fileName Name and path of the log file.
+     * @throws IOException
+     */
     public static void initLog(String fileName) throws IOException {
         File file = new File(fileName);
         if (!file.exists()) {

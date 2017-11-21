@@ -23,6 +23,10 @@ public class Controller implements Initializable {
         this.scene = scene;
     }
 
+    /**
+     * According to the state of the table (empty/occupied), switch seat UI.
+     * @param table Table that activate seat UI change
+     */
     public void setSeat(Table table) {
         ImageView imageView = (ImageView) scene.lookup(table.getTableNo());
         String imageUrl = "";
@@ -59,6 +63,11 @@ public class Controller implements Initializable {
 //        imageView.setImage(image);
     }
 
+    /**
+     * Update Queue size Text node
+     * @param queueId Queue Id of the queue to be updated
+     * @param queueSize new queue size to be updated
+     */
     public void updateQueue(String queueId, int queueSize) {
         Text queueElement = (Text) scene.lookup(queueId);
         Platform.runLater(() -> {
@@ -67,6 +76,11 @@ public class Controller implements Initializable {
 //        queueElement.setText(Integer.toString(queueSize));
     }
 
+    /**
+     * Update Last Ticket Call Text node
+     * @param queueIndex Queue Index of the queue to be updated
+     * @param ticketNo Last ticket called of the queue
+     */
     public void updateLastTicketCall(int queueIndex, String ticketNo) {
         String index = "#ticket_" + queueIndex;
         Text tableElement = (Text) scene.lookup(index);

@@ -24,6 +24,11 @@ public class TableListener {
         }
     }
 
+    /**
+     * Check if there is any empty table for that table type.
+     * @param row Equivalent to Table Type
+     * @return
+     */
     public Table checkEmptyTable(Integer row) {
         for (Table table : this.tables.get(row)) {
             if (table.getEmpty() && table.getTicketNo() == null) {
@@ -33,6 +38,10 @@ public class TableListener {
         return null;
     }
 
+    /**
+     * Check if there is table which is empty but have a ticket number. Do table clear up on those table
+     * @param row Equivalent to Table Type
+     */
     public void checkTableStatus(int row) {
         for (Table table : this.tables.get(row)) {
             if (table.getEmpty() && table.getTicketNo() != null) {
@@ -42,6 +51,11 @@ public class TableListener {
         }
     }
 
+    /**
+     * Set the table to occupied state, and update the seat UI.
+     *
+     * @param tableNo Table Number to be assigned
+     */
     public void tableAssign(String tableNo) {
         Integer row = Integer.parseInt(tableNo.split("_")[1]);
         Integer col = Integer.parseInt(tableNo.split("_")[2]);
@@ -64,6 +78,10 @@ public class TableListener {
         Log.logger.log(Level.INFO, logOutput.toString());
     }
 
+    /**
+     * Check out a table
+     * @param tableNo Table Number to be checked out
+     */
     public void checkOut(String tableNo) {
         Integer row = Integer.parseInt(tableNo.split("_")[1]);
         Integer col = Integer.parseInt(tableNo.split("_")[2]);

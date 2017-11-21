@@ -17,6 +17,12 @@ public class QueueListener implements Runnable {
         this.queue = new Queue("#queue_" + index);
     }
 
+    /**
+     * Add a ticket to the queue if the queue size is smaller than 20, else not adding to the queue.
+     * Return true if successfully add ticket to queue, else return false;
+     * @param ticket    ticket to be add to queue
+     * @return boolean  is the ticket added into the queue
+     */
     public Boolean addTicketToQueue(Ticket ticket) {
         if (this.queue.tickets.size() < 20) {
             this.queue.tickets.add(ticket);
@@ -27,6 +33,15 @@ public class QueueListener implements Runnable {
         }
     }
 
+    /**
+     * Check if a queue has waiting ticket, if yes, check if there is empty table of the same type,
+     * if yes again, then pop the ticket queue head, and assign the ticket to the empty table.
+     *
+     * <p>
+     * Assignment process will continue until there is no ticket left in the queue.
+     *
+     * @param queueIndex index of queue
+     */
     public void queueToTable(int queueIndex) {
         Iterator<Ticket> tickets = this.queue.tickets.iterator();
         while (tickets.hasNext()) {
@@ -60,6 +75,10 @@ public class QueueListener implements Runnable {
         }
     }
 
+    /**
+     * Get entire Queue object.
+     * @return Queue
+     */
     public Queue getQueue() {
         return queue;
     }

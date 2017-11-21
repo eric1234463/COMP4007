@@ -18,7 +18,7 @@ public class Main extends Application {
     private FXMLLoader loader;
     private Scene scene;
 
-    
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         //Logging init
@@ -36,11 +36,6 @@ public class Main extends Application {
 
         this.parentStage.show();
 
-//        this.customerPanelStage = new Stage();
-//        this.customerPanelStage.setTitle("Customer Panel");
-//        customerPanelController = replaceCustomerSceneContent("customerPanel.fxml");
-//        customerPanelController.setScene(customerPanelScene);
-//        this.customerPanelStage.show();
 
     }
 
@@ -48,6 +43,12 @@ public class Main extends Application {
         launch(args);
     }
 
+    /**
+     * Replace JavaFx Scene Controller with a external defined one.
+     * @param fxml FXML file path
+     * @return External defined Initializable Controller
+     * @throws Exception
+     */
     private Initializable replaceSceneContent(String fxml) throws Exception {
         loader = new FXMLLoader();
         InputStream in = Main.class.getResourceAsStream(fxml);

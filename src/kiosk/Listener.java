@@ -8,6 +8,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.logging.Level;
 
+/**
+ *
+ */
 public class Listener implements Runnable {
     private static final int LISTEN_PORT = 54321;
     public Controller controller;
@@ -57,6 +60,13 @@ public class Listener implements Runnable {
         }
     }
 
+    /**
+     * This method process message string and respond to different message type accordingly.
+     * <p>
+     * If the message is not valid, error message will be printed.
+     *
+     * @param message raw message string.
+     */
     public void mapMsg(String message) {
         Log.logger.log(Level.INFO, "New msg: NetIn: [" + message + "]");
         String[] Msg = message.split(" ");
@@ -93,7 +103,14 @@ public class Listener implements Runnable {
         }
     }
 
-
+    /**
+     * Input the number of person, assign a ticket number according to table type, return ticket number
+     * <p>
+     *
+     * @param nPersons number of person
+     *
+     * @return ticket number
+     */
     public Integer generateTicktetNo(String nPersons) {
         Integer index;
         switch (Integer.parseInt(nPersons)) {
@@ -121,6 +138,13 @@ public class Listener implements Runnable {
         return 0;
     }
 
+    /**
+     * Send message to client server for ticket respond
+     * <p>
+     * This method have no return
+     *
+     * @param ticket ticket being responded
+     */
     public void ticketRep(Ticket ticket) {
         String clientId = ticket.getClientId();
         int nPersons = ticket.getnPersons();
@@ -131,13 +155,29 @@ public class Listener implements Runnable {
         printWriter.flush();
     }
 
+    /**
+     * Send message to client server saying assigning a table to a ticket
+     * <p>
+     * This method have no return
+     *
+     * @param ticketNo ticket number that being assigned a table
+     * @param tableNo  table number to be assign to the ticket
+     */
     public void ticketCall(String ticketNo, String tableNo) {
         System.out.println("TicketCall: " + ticketNo + " " + tableNo + "");
         printWriter.println("TicketCall: " + ticketNo + " " + tableNo + "");
-        Log.logger.log(Level.FINER, "NetOut: [TicketCall: " + ticketNo + " " + tableNo +"]");
+        Log.logger.log(Level.FINER, "NetOut: [TicketCall: " + ticketNo + " " + tableNo + "]");
         printWriter.flush();
     }
 
+    /**
+     * Send message to client server saying assigning a table to a ticket
+     * <p>
+     * This method have no return
+     *
+     * @param ticketNo ticket number that being assigned a table
+     * @param tableNo  table number to be assign to the ticket
+     */
     public void tableAssign(String ticketNo, String tableNo) {
         //System.out.println("get ACK and do TableAssign: " + ticketNo + " " + tableNo + "");
         printWriter.println("TableAssign: " + ticketNo + " " + tableNo + "");
@@ -145,12 +185,19 @@ public class Listener implements Runnable {
         printWriter.flush();
     }
 
+    /**
+     * Send message to client server saying the queue is too long for this ticket
+     * <p>
+     * This method have no return
+     *
+     * @param ticket ticket that is told be in long queue
+     */
     public void queueTooLong(Ticket ticket) {
         String clientId = ticket.getClientId();
         Integer nPerson = ticket.getnPersons();
         System.out.println("QueueTooLong: " + clientId + " " + nPerson + "");
         printWriter.println("QueueTooLong: " + clientId + " " + nPerson + "");
-        Log.logger.log(Level.FINER, "NetOut: [QueueTooLong: " + clientId + " " + nPerson +"]");
+        Log.logger.log(Level.FINER, "NetOut: [QueueTooLong: " + clientId + " " + nPerson + "]");
 
         printWriter.flush();
 
